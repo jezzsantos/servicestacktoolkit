@@ -1,7 +1,7 @@
 ServiceStack Toolkit
 ===================
 
-(all contributions are very welcome)
+(The is a community run project, all contributions are very welcome)
 
 A developer toolkit (for Visual Studio 2013) for building ServiceStack web services.
 
@@ -13,3 +13,14 @@ Based upon simple configuration by the developer, the toolkit automates the crea
 
 # Contributions
 If you like the toolkit and think we could/should improve it, then please go ahead and fork it and share your knowledge.
+
+# Developing the Toolkit
+To develop, improve, or contribute to the toolkit, you first need to install the 'NuPattern' tools to Visual Studio 2013. Download the 'NuPattern' extension from http://nupattern.org or from within the 'Extensions and Updates' in Visual Studio 2013.
+To install the 'NuPattern' extension, you first need to install the 'Visual Studio 2013 SDK'. Do that before installing 'NuPattern'.
+Then, just clone or fork the code from this site. Build the code, and hit F5 or CTRL+F5 to run the toolkit in the 'Experimental Instance' of Visual Studio. 
+
+# Using the Toolkit
+At some point shortly after we start, we will have a binary release (a VSIX file) that you can download and install in Visual Studio. 
+
+Until then, you can always compile the source to create that binary.
+After you build the solution the VSIX file is automatically generated in the 'Binaries' folder next to the solution file in the source tree.

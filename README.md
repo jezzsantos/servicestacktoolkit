@@ -12,6 +12,7 @@ The toolkit applies many of the recommended practices and patterns evolving in t
 Based upon simple configuration by the developer, the toolkit automates the creation of much of the plumbing and coding of the web service required to construct a fully functioning web service of your choice (from front to back). Including creating basic unit and integration tests. All that remains is for you (the developer) to code the logic and behaviour of the web service, let the toolkit take care of the rest.
 
 # Contributions
+This project is intended to be shared by everyone.
 If you like the toolkit and think we could/should improve it, then please go ahead and fork it and share your knowledge.
 
 # Developing the Toolkit

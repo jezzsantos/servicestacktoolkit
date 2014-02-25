@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+    <Identifier Id="B4A8F72C-332B-4154-9351-F7049C24567D">
+        <Name>ServiceStackToolkit</Name>
+        <Author>Company</Author>
+        <Version>1.0.0.0</Version>
+        <Description xml:space="preserve">Development toolkit for REST web services using ServiceStack</Description>
+        <Locale>1033</Locale>
+        <Icon>Resources\ToolkitIcon.png</Icon>
+        <MoreInfoUrl></MoreInfoUrl>
+        <GettingStartedGuide></GettingStartedGuide>
+        <PreviewImage></PreviewImage>
+        <SupportedProducts>
+            <VisualStudio Version="12.0">
+                <Edition>Pro</Edition>
+            </VisualStudio>
+        </SupportedProducts>
+        <SupportedFrameworkRuntimeEdition MinVersion="4.5" MaxVersion=""/>
+    </Identifier>
+    <References>
+        <Reference Id="93373818-600f-414b-8181-3a0cb79fa785" MinVersion="1.4.24.0">
+            <Name>NuPattern Toolkit Manager</Name>
+            <VsixPath>NuPatternToolkitManager.vsix</VsixPath>
+        </Reference>
+    </References>
+    <Content>
+        <MefComponent>|%CurrentProject%|</MefComponent>
+        <MefComponent>|ServiceStackToolkit.Automation|</MefComponent>
+        <CustomExtension Type="NuPattern.Toolkit.PatternModel" AssemblyFile="ServiceStackToolkit.dll">ServiceStackToolkit.PatternModel.patterndefinition</CustomExtension>
+        <ItemTemplate>Assets\Templates\Items</ItemTemplate>
+        <ProjectTemplate>Assets\Templates\Projects</ProjectTemplate>
+        <VsPackage>BindingPath.pkgdef</VsPackage>
+    </Content>
+</Vsix>

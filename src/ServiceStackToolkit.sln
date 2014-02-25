@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C9F1F0DD-B3A4-4EF3-BCE2-F0A176E90779}"
+	ProjectSection(SolutionItems) = preProject
+		ServiceStackToolkit.guidancestate = ServiceStackToolkit.guidancestate
+		ServiceStackToolkit.slnbldr = ServiceStackToolkit.slnbldr
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackToolkit.Automation", "ServiceStackToolkit.Automation\ServiceStackToolkit.Automation.csproj", "{9F745C6F-A69F-41CB-8007-E329833D0491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackToolkit", "ServiceStackToolkit\ServiceStackToolkit.csproj", "{AAFCAAEC-FE35-443E-9DBC-CB2EB6A927FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F745C6F-A69F-41CB-8007-E329833D0491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F745C6F-A69F-41CB-8007-E329833D0491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F745C6F-A69F-41CB-8007-E329833D0491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F745C6F-A69F-41CB-8007-E329833D0491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFCAAEC-FE35-443E-9DBC-CB2EB6A927FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFCAAEC-FE35-443E-9DBC-CB2EB6A927FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFCAAEC-FE35-443E-9DBC-CB2EB6A927FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFCAAEC-FE35-443E-9DBC-CB2EB6A927FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		GuidanceWorkflows = 9f6dc301-6f66-4d21-9f9c-b37412b162f6:Creating Pattern Toolkits:1.4.24.0
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,3424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<patternModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/visualstudio/patterning/library/automationextensions" dslVersion="1.3.0.0" Id="f7a56fbc-aa24-4f11-94c6-f83416fda9c2" xmlns="http://schemas.microsoft.com/visualstudio/patterning/runtime/patternmodel">
+  <dm0:extensions>
+    <eventSettings Id="8620544f-1984-4660-a610-13bc13142e9c" commandId="a2804bf1-46d2-4a61-ba04-3e9fd022dc56" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="68aed49a-7ea3-4783-9fb2-7fd319ac8670" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="ce31c47b-1f09-4e1c-be55-9aec67e406ab" commandId="a2804bf1-46d2-4a61-ba04-3e9fd022dc56" eventId="NuPattern.Library.Events.IOnProductStoreSavedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="5c7d15f7-0788-420b-9c63-e87e3e235d28" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="e3db6f82-5eab-4a1d-88a9-eb955cd8e83c" commandId="f9d4b460-19d5-417d-8d40-3d260d1ed114" eventId="NuPattern.Library.Events.IOnElementActivatedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="a6514656-bd12-4086-a744-ae475c58008f" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="8583931a-4003-4014-86a1-510b20a21f25" commandId="22ab69ec-1f38-4b1a-8678-96861172682e" eventId="NuPattern.Library.Events.IOnElementInstantiatedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="487871d9-8871-40d3-914b-ebb14d642321" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="58b447a0-1962-418c-a5e4-523f95af8d14" commandId="2938461c-a751-4b79-a7ce-5baa56c14588" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="0e6e1698-d57f-4e81-a6be-68c0a7d7bf6a" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
+    "Properties": [
+      {
+        "Name": "ValidateDescendants",
+        "Value": "True",
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
+    "Properties": [
+      {
+        "Name": "ComparisonKind",
+        "Value": "OrdinalIgnoreCase",
+        "ValueProvider": null
+      },
+      {
+        "Name": "LeftValue",
+        "Value": "{Parent.Parent.Parent.Parent.GenerateCodeOnBuild}",
+        "ValueProvider": null
+      },
+      {
+        "Name": "RightValue",
+        "Value": "True",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</conditions>
+    </eventSettings>
+    <eventSettings Id="7e5d5357-924b-49d2-9c12-24969fc99edb" commandId="13f8d91a-3c12-44c5-b183-f20620467a0b" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="d9822d57-848e-4def-be1a-8fda39bede64" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
+    "Properties": [
+      {
+        "Name": "ValidateDescendants",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
+    "Properties": [
+      {
+        "Name": "ComparisonKind",
+        "Value": "OrdinalIgnoreCase",
+        "ValueProvider": null
+      },
+      {
+        "Name": "LeftValue",
+        "Value": "{Parent.Parent.Parent.Parent.Parent.Parent.GenerateCodeOnBuild}",
+        "ValueProvider": null
+      },
+      {
+        "Name": "RightValue",
+        "Value": "true",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</conditions>
+    </eventSettings>
+    <eventSettings Id="9231e9d7-4b51-49e3-aa06-f86458181f19" commandId="d66d1991-a215-4bf0-a5c3-0ae7ce12cb7a" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="f66ee8b2-3035-4f8c-8b67-7efb3879a43c" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
+    "Properties": [
+      {
+        "Name": "ValidateDescendants",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
+    "Properties": [
+      {
+        "Name": "ComparisonKind",
+        "Value": "OrdinalIgnoreCase",
+        "ValueProvider": null
+      },
+      {
+        "Name": "LeftValue",
+        "Value": "{Parent.Parent.Parent.Parent.Parent.Parent.GenerateCodeOnBuild}",
+        "ValueProvider": null
+      },
+      {
+        "Name": "RightValue",
+        "Value": "true",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</conditions>
+    </eventSettings>
+    <eventSettings Id="a91532e7-60a3-4b4c-a937-e5ff2983dac6" commandId="8f83af20-43c7-4586-93f3-608033ea8609" eventId="NuPattern.Library.Events.IOnElementDeletingEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="ba3b0563-594e-40b8-841d-abd31a3b2c7c" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="8d14377f-ff6c-42f2-97b1-4c7f8f1b6437" commandId="afe533c8-eed2-4c4c-958e-d7468289e828" eventId="NuPattern.Library.Events.IOnElementDeletingEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="215b13c1-42c7-4712-9f64-63afae3e8ea7" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="c3c1faf5-9c93-44f8-8bb9-e9de7d54c5fb" commandId="3c9eeab7-da8f-4aa2-a8d7-a54296ecdcbc" eventId="NuPattern.Library.Events.IOnElementDeletingEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="5a942822-76ca-4a82-ae03-9e669389e8be" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="17d78fc9-915f-451f-b3fc-bfcac340a218" commandId="784417a6-4856-470f-83e1-26fc645bc9bc" eventId="NuPattern.Library.Events.IOnElementActivatedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="6e9713e7-9bd6-4429-88f5-720d14935635" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="1f45aef6-d54d-4b3d-90c9-53e82f98ab39" commandId="7587528c-5253-487b-910a-117ee9edfc3e" eventId="NuPattern.Library.Events.IOnElementActivatedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="bad5ee60-9cb5-4ab8-9c94-12b073ea3ad1" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="1ae06a7b-c805-4e19-988a-3d68756aedd2" commandId="c81315d7-ffd2-48ed-a610-96b490545038" eventId="NuPattern.Library.Events.IOnElementActivatedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="2e9df787-e4ff-4c11-b2bb-521f94e5c156" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="5e241ef4-f0e9-4bab-abe9-c236a4f0a033" commandId="4508ff7d-96ea-4821-b644-114fe19bcfc1" eventId="NuPattern.Library.Events.IOnElementActivatedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="f8d3f750-6260-4ade-b356-ad509b8ee384" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="5c5a03b2-c0e6-428c-af21-a7ef0328a7bf" commandId="49346b52-9d4b-42cc-a1ef-bcf98d087c3e" eventId="NuPattern.Library.Events.IOnElementActivatedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="84511cd0-917f-48e7-8240-aa42f3bfe22a" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="920ba6db-39a4-42fc-81e7-b73bc960a568" commandId="2938461c-a751-4b79-a7ce-5baa56c14588" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="4760f134-62f9-4d16-b161-3f6973d2fe0c" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
+    "Properties": [
+      {
+        "Name": "ValidateDescendants",
+        "Value": "True",
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
+    "Properties": [
+      {
+        "Name": "ComparisonKind",
+        "Value": "OrdinalIgnoreCase",
+        "ValueProvider": null
+      },
+      {
+        "Name": "LeftValue",
+        "Value": "{StorageType}",
+        "ValueProvider": null
+      },
+      {
+        "Name": "RightValue",
+        "Value": "AzureTable",
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
+    "Properties": [
+      {
+        "Name": "ComparisonKind",
+        "Value": "OrdinalIgnoreCase",
+        "ValueProvider": null
+      },
+      {
+        "Name": "LeftValue",
+        "Value": "{Parent.Parent.Parent.Parent.GenerateCodeOnBuild}",
+        "ValueProvider": null
+      },
+      {
+        "Name": "RightValue",
+        "Value": "True",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</conditions>
+    </eventSettings>
+    <eventSettings Id="101614db-41f9-448b-8994-f71606e6d1dd" commandId="4d976465-f8fa-4bdb-bf6c-5220dbcee124" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="0b2a14ca-7ee2-4ba4-a19f-67d66040dfa9" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
+    "Properties": [
+      {
+        "Name": "ValidateDescendants",
+        "Value": "True",
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
+    "Properties": [
+      {
+        "Name": "ComparisonKind",
+        "Value": "OrdinalIgnoreCase",
+        "ValueProvider": null
+      },
+      {
+        "Name": "LeftValue",
+        "Value": "{Parent.Parent.GenerateCodeOnBuild}",
+        "ValueProvider": null
+      },
+      {
+        "Name": "RightValue",
+        "Value": "True",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</conditions>
+    </eventSettings>
+    <eventSettings Id="f8c15de5-3395-42cf-8901-2d0038e83f21" commandId="4d976465-f8fa-4bdb-bf6c-5220dbcee124" eventId="ServiceStackToolkit.Automation.Events.IOnSyncEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="d757adb5-e946-4d2f-b583-445711174d14" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
+    "Properties": [
+      {
+        "Name": "ValidateDescendants",
+        "Value": "True",
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
+    "Properties": [
+      {
+        "Name": "ComparisonKind",
+        "Value": "OrdinalIgnoreCase",
+        "ValueProvider": null
+      },
+      {
+        "Name": "LeftValue",
+        "Value": "{Parent.Parent.GenerateCodeOnBuild}",
+        "ValueProvider": null
+      },
+      {
+        "Name": "RightValue",
+        "Value": "True",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</conditions>
+    </eventSettings>
+    <eventSettings Id="57117080-e3ee-4501-9b90-54fcc66e2ffe" commandId="2938461c-a751-4b79-a7ce-5baa56c14588" eventId="ServiceStackToolkit.Automation.Events.IOnSyncEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="796ed7e0-3137-444c-9673-5d0120cb4798" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
+    "Properties": [
+      {
+        "Name": "ComparisonKind",
+        "Value": "OrdinalIgnoreCase",
+        "ValueProvider": null
+      },
+      {
+        "Name": "LeftValue",
+        "Value": "{StorageType}",
+        "ValueProvider": null
+      },
+      {
+        "Name": "RightValue",
+        "Value": "AzureTable",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</conditions>
+    </eventSettings>
+    <eventSettings Id="a4bb6054-1ed2-4d7a-beb0-7539cb638b2b" commandId="a581f455-5bd3-41e7-baa5-b091ffd3acb4" eventId="ServiceStackToolkit.Automation.Events.IOnSyncEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="1c39d7a0-5bfa-42ef-b655-b9accaf67c78" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="11559c88-3297-43af-9f18-0aeb816516da" commandId="13f8d91a-3c12-44c5-b183-f20620467a0b" eventId="ServiceStackToolkit.Automation.Events.IOnSyncEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="4bea2344-19e6-4670-a082-fb8cbdd9fbd9" />
+      </extendedElement>
+    </eventSettings>
+    <eventSettings Id="37c3ce9d-53c9-4753-9464-2f87ba0a5f44" commandId="d66d1991-a215-4bf0-a5c3-0ae7ce12cb7a" eventId="ServiceStackToolkit.Automation.Events.IOnSyncEvent" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="3424ec45-5404-4b6d-a7bf-582f5879c2a8" />
+      </extendedElement>
+    </eventSettings>
+    <commandSettings Id="fd1fc581-2163-4e79-86d8-d38547720091" typeId="NuPattern.Library.Commands.AssociateDroppedArtifactsCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="3d89eb81-ee21-49ed-8c59-5203fa853453" />
+      </extendedElement>
+    </commandSettings>
+    <commandSettings Id="a2804bf1-46d2-4a61-ba04-3e9fd022dc56" typeId="NuPattern.Library.Commands.ValidateElementCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="7e6498a5-574f-4ebb-a12a-e797ae2fe47d" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "ValidateDescendants",
+    "Value": "True",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="f9d4b460-19d5-417d-8d40-3d260d1ed114" typeId="NuPattern.Library.Commands.ActivateArtifactCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="352d3e5e-b349-4347-9953-af30aa008c42" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Open",
+    "Value": "False",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="22ab69ec-1f38-4b1a-8678-96861172682e" typeId="ServiceStackToolkit.Automation.Commands.CreateDefaultVerbsCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="b26bd509-4fa0-4979-88dc-09f572b3ad52" />
+      </extendedElement>
+    </commandSettings>
+    <commandSettings Id="f73966ae-d62f-42cf-8ec2-3e50d9511541" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="558f8fe3-ee1a-4bda-b942-dbae7ab6c423" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ResourceNamePlural}",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\~\\Services",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/Service.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/5f2d4ce6-c8a4-4a70-804b-c1f9bb664d69",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="f5eb920f-7be1-4341-9530-fcec49e54500" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="f85c2351-400a-4063-ab91-ac28c15e2d75" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "I{ResourceNamePlural}",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\~\\Services",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/ServiceInterface.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/7825f817-9fe5-4d36-b35b-3ae654662c99",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="f34e504d-91f3-4024-8fd5-742f0038a33f" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="99838967-5acf-4243-a578-42a202985ec6" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ContractName}",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\..\\..\\~MessageContracts",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/RequestContract.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/5532efc1-2e7e-40cf-9ca9-4d3a0714ea47",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="47fbbfa4-a319-418f-a610-c7258a29fa98" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="711b84e7-0eae-4de3-9d5c-a8eff7ec888c" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ContractName}",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\..\\..\\~MessageContracts",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/ResponseContract.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/888701d6-552d-4d62-97c4-ae3ab32304a3",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="1a6a4d63-e4ce-44ea-aff9-27ed0a2ac5a6" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="3b718907-3d91-4c23-940d-5e70ff414769" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ContractName}Validator",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\..\\..\\~Validators",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/RequestContractValidator.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/c21816ef-3250-4b6d-9502-00a4aebf560b",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="8f83af20-43c7-4586-93f3-608033ea8609" typeId="NuPattern.Library.Commands.DeleteArtifactsCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="2061af23-1cc8-4731-b3c9-e493bc037b5a" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Action",
+    "Value": "DeleteAll",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="afe533c8-eed2-4c4c-958e-d7468289e828" typeId="NuPattern.Library.Commands.DeleteArtifactsCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="b0afbcbb-5697-46d8-b4b4-484d09564c60" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Action",
+    "Value": "DeleteAll",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="c81315d7-ffd2-48ed-a610-96b490545038" typeId="NuPattern.Library.Commands.ActivateArtifactCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="dd5003cd-627c-413a-a64f-d5e0ce1acde2" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Open",
+    "Value": "False",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="5141cf7b-ecff-4e84-a80c-1f06da53660f" typeId="NuPattern.Library.Commands.AssociateDroppedArtifactsCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="4c49cc77-25e5-47e0-a6a9-fd838d131a64" />
+      </extendedElement>
+    </commandSettings>
+    <commandSettings Id="c6c2bbe4-5826-41e1-b6c6-1ce6c55b2301" typeId="NuPattern.Library.Commands.AssociateDroppedArtifactsCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="1312f197-b16e-40eb-ab28-9ae184d7c968" />
+      </extendedElement>
+    </commandSettings>
+    <commandSettings Id="a581f455-5bd3-41e7-baa5-b091ffd3acb4" typeId="NuPattern.Library.Commands.AggregatorCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="cb568d48-cba3-43c8-a985-6e9a0a981215" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "CommandReferenceList",
+    "Value": "[\r\n  {\r\n    \"CommandId\": \"5ccc64a6-e448-4ca8-a139-1969364bbddc\"\r\n  },\r\n  {\r\n    \"CommandId\": \"5ecf8bfc-f233-4a35-b2dd-0b708012b13c\"\r\n  },\r\n  {\r\n    \"CommandId\": \"f5eb920f-7be1-4341-9530-fcec49e54500\"\r\n  },\r\n  {\r\n    \"CommandId\": \"f73966ae-d62f-42cf-8ec2-3e50d9511541\"\r\n  },\r\n  {\r\n    \"CommandId\": \"28e3217c-93f7-407e-91d3-768e80d1d721\"\r\n  },\r\n  {\r\n    \"CommandId\": \"3a849b1d-363c-4759-83a1-3378e8643c2c\"\r\n  },\r\n  {\r\n    \"CommandId\": \"802a9432-e9fc-42ff-8c02-eae06427fb34\"\r\n  }\r\n]",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="3a849b1d-363c-4759-83a1-3378e8643c2c" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="b783e697-f69c-4ae2-aa17-f567889ee360" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ResourceNamePlural}Spec",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\Tests\\UnitTests\\~\\Services",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/ServiceUnitTest.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/31640a45-9166-4d5a-b0ff-78dcd3173c2b",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="28e3217c-93f7-407e-91d3-768e80d1d721" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="0fdc67b5-a661-4756-8856-a9987389b862" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "I{ResourceNamePlural}Manager",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\~\\Workflow",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/WorkflowInterface.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/73b05553-3116-44b6-8344-db05e988ea47",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="802a9432-e9fc-42ff-8c02-eae06427fb34" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="c5bb0570-3677-4c43-b84c-ae372ea25b80" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ResourceNamePlural}Spec",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\Tests\\IntegrationTests\\~\\Services",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/ServiceIntegrationTest.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/78fbde7a-10a4-4896-8ec0-78ec23c5d82e",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="7610ee25-0cba-43dc-a874-5e58387060e1" typeId="NuPattern.Library.Commands.ActivateArtifactCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="0c1c3253-3b0c-42ce-8e95-e43ca1262720" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Open",
+    "Value": "False",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="784417a6-4856-470f-83e1-26fc645bc9bc" typeId="NuPattern.Library.Commands.ActivateArtifactCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="ddbfcd45-42b4-4646-aa2f-a218ae024a7f" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Open",
+    "Value": "False",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="7587528c-5253-487b-910a-117ee9edfc3e" typeId="NuPattern.Library.Commands.ActivateArtifactCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="94635bdb-7cea-4c80-b91c-96f07f6f39e1" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Open",
+    "Value": "False",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="3c9eeab7-da8f-4aa2-a8d7-a54296ecdcbc" typeId="NuPattern.Library.Commands.DeleteArtifactsCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="8d3b616f-1c2a-42dc-b406-8260a578b226" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Action",
+    "Value": "DeleteAll",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="4508ff7d-96ea-4821-b644-114fe19bcfc1" typeId="NuPattern.Library.Commands.ActivateArtifactCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="790628c8-2c23-47bc-ab7d-0a23b73ccdab" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Open",
+    "Value": "True",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="49346b52-9d4b-42cc-a1ef-bcf98d087c3e" typeId="NuPattern.Library.Commands.ActivateArtifactCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="dd06e176-e31a-4c34-9623-760f470c91e2" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Open",
+    "Value": "True",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="547d7174-50f3-4401-b2fa-854660ed6439" typeId="NuPattern.Library.Commands.ActivateArtifactCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="7aba1cc7-681e-4152-8fa1-7dcd2a17686b" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Open",
+    "Value": "False",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="13f8d91a-3c12-44c5-b183-f20620467a0b" typeId="NuPattern.Library.Commands.AggregatorCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="a7aa6d13-94d3-4f05-8a93-eb750ed4203e" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "CommandReferenceList",
+    "Value": "[\r\n  {\r\n    \"CommandId\": \"f34e504d-91f3-4024-8fd5-742f0038a33f\"\r\n  },\r\n  {\r\n    \"CommandId\": \"1a6a4d63-e4ce-44ea-aff9-27ed0a2ac5a6\"\r\n  }\r\n]",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="d66d1991-a215-4bf0-a5c3-0ae7ce12cb7a" typeId="NuPattern.Library.Commands.AggregatorCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="76abb1ee-a18f-4139-80d0-54a63659ee3e" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "CommandReferenceList",
+    "Value": "[\r\n  {\r\n    \"CommandId\": \"47fbbfa4-a319-418f-a610-c7258a29fa98\"\r\n  }\r\n]",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="44369a40-7ad7-4bb4-a60d-4afc614b6a50" typeId="ServiceStackToolkit.Automation.Commands.AddNuGetPackagesCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="0cf33a95-a9e8-4662-901f-dcc3d40dc66b" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Packages",
+    "Value": "ServiceStack",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="71774502-11ac-48a4-8a1b-82de69b9e26c" typeId="ServiceStackToolkit.Automation.Commands.AddNuGetPackagesCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="745af6a3-a135-4bb9-a38d-9075e33d2243" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Packages",
+    "Value": "ServiceStack;Moq",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="a4324267-979a-4564-a7be-f44583d19efb" typeId="ServiceStackToolkit.Automation.Commands.AddNuGetPackagesCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="baec0e80-97aa-4f08-a47f-af3e22fb8ede" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "Packages",
+    "Value": "ServiceStack",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="c57f6f9a-a1eb-4c30-8f4b-c7e93a9735b0" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="98ff1a51-f130-4d50-af2b-a0cefccacf99" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ResourceNameSingular}StorageProvider",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\~\\Storage",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/StorageProvider.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/fcb33b66-0cfe-4ad8-b5e1-3b8ae1e2a690",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="2799febd-df96-44cd-bfeb-c50617ee82d9" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="74d0ab78-f5c0-497f-99b0-f4fe381a36de" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ResourceNameSingular}Entity",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\~\\Storage\\Table",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/StorageEntity.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/582db0b5-feee-4b6d-9fc0-ad82c3687cc5",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="03a93173-9377-4890-bc22-0bb65cb8789c" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="f29e1372-dd1c-429f-beb6-3ff92c088022" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ResourceNameSingular}EntityTable",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\~\\Storage\\Table",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/StorageEntityTable.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/ba9b0ee1-da56-4f35-852a-809186651da1",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="2938461c-a751-4b79-a7ce-5baa56c14588" typeId="NuPattern.Library.Commands.AggregatorCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="37200416-3c22-4206-8335-a15c785b5a14" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "CommandReferenceList",
+    "Value": "[\r\n  {\r\n    \"CommandId\": \"c57f6f9a-a1eb-4c30-8f4b-c7e93a9735b0\"\r\n  },\r\n  {\r\n    \"CommandId\": \"2799febd-df96-44cd-bfeb-c50617ee82d9\"\r\n  },\r\n  {\r\n    \"CommandId\": \"03a93173-9377-4890-bc22-0bb65cb8789c\"\r\n  }\r\n]",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="5ccc64a6-e448-4ca8-a139-1969364bbddc" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="24fc237c-06fd-4320-a4fa-f6e1758d9c1d" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "{ResourceNameSingular}",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\~\\DataContracts",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/DataContract.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/774db771-9c3b-40c1-916f-dd208a2934ea",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="5ecf8bfc-f233-4a35-b2dd-0b708012b13c" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="515aa42f-b5df-46a9-b750-d513bf856492" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "I{ResourceNameSingular}",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": "..\\..\\~\\DataContracts",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/DataContractInterface.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/9e6e96b4-294e-420a-9574-c95d6db03710",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="4d976465-f8fa-4bdb-bf6c-5220dbcee124" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="7fe18bc1-399b-4405-b1ef-20b1fcb05ddb" />
+      </extendedElement>
+      <properties>[
+  {
+    "Name": "SanitizeName",
+    "Value": "True",
+    "ValueProvider": null
+  },
+  {
+    "Name": "SyncName",
+    "Value": "False",
+    "ValueProvider": null
+  },
+  {
+    "Name": "Tag",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetBuildAction",
+    "Value": null,
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetCopyToOutput",
+    "Value": "DoNotCopy",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetFileName",
+    "Value": "AppHost",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TargetPath",
+    "Value": ".\\~",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateUri",
+    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/AppHost.t4",
+    "ValueProvider": null
+  },
+  {
+    "Name": "TemplateAuthoringUri",
+    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/cda7730e-47f1-4262-a881-0efddc296094",
+    "ValueProvider": null
+  }
+]</properties>
+    </commandSettings>
+    <commandSettings Id="074fe7f3-38d7-4cd4-9448-84584f1d3f07" typeId="ServiceStackToolkit.Automation.Commands.RaiseSyncEventCommand">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="743791d3-c728-4ac8-a068-bbe37c03de9e" />
+      </extendedElement>
+    </commandSettings>
+    <menuSettings Id="a126f641-b9ba-4e77-a225-b94f8dd069f8" text="Show Solution Items" commandId="f9d4b460-19d5-417d-8d40-3d260d1ed114" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="d0c9d75b-1db0-4b9e-92e6-06cd0a80b937" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ArtifactReferenceExistsCondition",
+    "Properties": []
+  }
+]</conditions>
+    </menuSettings>
+    <menuSettings Id="edcf2e25-cb8c-461c-b0cf-1647541e4de0" text="Validate All" commandId="a2804bf1-46d2-4a61-ba04-3e9fd022dc56" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="5a89e64e-4949-4da9-aabb-2d3e9da3be46" />
+      </extendedElement>
+    </menuSettings>
+    <menuSettings Id="a5681ffd-22d2-4709-9d45-4782349fc82e" text="Show Solution Items" commandId="c81315d7-ffd2-48ed-a610-96b490545038" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="c50d8ba8-da7d-4b9e-8882-af25152a4ec7" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ArtifactReferenceExistsCondition",
+    "Properties": []
+  }
+]</conditions>
+    </menuSettings>
+    <menuSettings Id="1141abb6-748c-476e-839e-8f4848e84faf" text="Show Solution Items" commandId="784417a6-4856-470f-83e1-26fc645bc9bc" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="6c194c45-c809-4784-9398-ad33ea835135" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ArtifactReferenceExistsCondition",
+    "Properties": []
+  }
+]</conditions>
+    </menuSettings>
+    <menuSettings Id="cc3de944-0709-4dc5-9ae7-d12ca47e36f8" text="Show Solution Items" commandId="7587528c-5253-487b-910a-117ee9edfc3e" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="12dbc189-da5a-4062-8a3b-18a3b6356244" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ArtifactReferenceExistsCondition",
+    "Properties": []
+  }
+]</conditions>
+    </menuSettings>
+    <menuSettings Id="9d796b90-56c6-4e90-94f4-81dcb9322c56" text="Show Solution Items" commandId="7610ee25-0cba-43dc-a874-5e58387060e1" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="c3db8324-9c83-4377-bf06-7fa730fed9b3" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ArtifactReferenceExistsCondition",
+    "Properties": []
+  }
+]</conditions>
+    </menuSettings>
+    <menuSettings Id="6cb39140-03ac-437e-bb90-797193df732c" text="Open Solution Items" commandId="4508ff7d-96ea-4821-b644-114fe19bcfc1" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="fc46c654-3f24-4fd4-a902-387a705505cc" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ArtifactReferenceExistsCondition",
+    "Properties": []
+  }
+]</conditions>
+    </menuSettings>
+    <menuSettings Id="b6508c29-e37b-4c58-8710-f92fce98c4b0" text="Open Solution Items" commandId="49346b52-9d4b-42cc-a1ef-bcf98d087c3e" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="12f99348-642a-4f7b-9f6d-64e7216624ad" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ArtifactReferenceExistsCondition",
+    "Properties": []
+  }
+]</conditions>
+    </menuSettings>
+    <menuSettings Id="b5851f8c-f52e-46f3-9a99-da20ac388279" text="Show Solution Items" commandId="547d7174-50f3-4401-b2fa-854660ed6439" wizardId="00000000-0000-0000-0000-000000000000" sortOrder="10000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="e4c23aca-7c04-46dd-a89c-ff3edf207a95" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ArtifactReferenceExistsCondition",
+    "Properties": []
+  }
+]</conditions>
+    </menuSettings>
+    <menuSettings Id="42ac7025-9da9-411f-8c39-920c3f8db982" text="Sync Solution" commandId="074fe7f3-38d7-4cd4-9448-84584f1d3f07" wizardId="00000000-0000-0000-0000-000000000000">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="3570db47-7259-4045-82c9-52a71f328bcb" />
+      </extendedElement>
+      <conditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
+    "Properties": [
+      {
+        "Name": "ValidateDescendants",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</conditions>
+    </menuSettings>
+    <guidanceExtension Id="f7003701-9f5c-41cb-9ade-2cd1dab6d8a3">
+      <extendedElement>
+        <patternSchemaMoniker Id="0409a2c6-826c-431c-a434-82b913ae6b2c" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="ae79fae4-e290-4ab1-bf95-b486ec13460e">
+      <extendedElement>
+        <elementSchemaMoniker Id="49ed2bfc-3fc4-4595-8241-8ce44203e52a" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="aad16a82-8756-421c-873a-1ed7b10ecbb2">
+      <extendedElement>
+        <collectionSchemaMoniker Id="55c285d6-8bac-45a8-85dd-605beed51a26" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="567896b4-5131-4b32-94d9-ca22c921b66e">
+      <extendedElement>
+        <elementSchemaMoniker Id="37012148-5679-4bec-8299-e5ba271eac55" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="b4e4f0a9-f6cf-4b62-8cf1-87e7f3a0fcac">
+      <extendedElement>
+        <elementSchemaMoniker Id="39264c19-8dfa-480d-88a3-376e18f316d1" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="238a2d73-873e-4178-a5c6-e5c1f433e6bd">
+      <extendedElement>
+        <elementSchemaMoniker Id="b3174220-650b-47b0-8826-bad69eb4fd8a" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="fa00d346-8444-4653-bb41-f39eb3eab4d1">
+      <extendedElement>
+        <elementSchemaMoniker Id="91261008-3004-4244-bed7-321a33aefa75" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="54603c9d-5eb2-487b-aed7-36a561f8fa02">
+      <extendedElement>
+        <elementSchemaMoniker Id="47787b3d-2e27-4cf2-bc9f-f3c9c7bb1f35" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="fa8c555e-acde-41f5-981a-2d122b998ef7">
+      <extendedElement>
+        <elementSchemaMoniker Id="eccdd0e4-490d-4082-9f54-ec3a3246e0e0" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="8d3e3c12-9458-4ba7-916c-6494194666c4">
+      <extendedElement>
+        <collectionSchemaMoniker Id="e0f60dd5-2d78-4c16-9780-e134ce626484" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="47541702-d539-4ff5-90f1-e6d7950218b9">
+      <extendedElement>
+        <elementSchemaMoniker Id="f04997c2-ad43-4e17-a78f-e34267c9f5dc" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="c68d4e02-c46e-4d3d-8897-56e5c76e635b">
+      <extendedElement>
+        <elementSchemaMoniker Id="edfbc554-33cc-4e05-996b-3ae14a5ff773" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="ca309bf4-70d5-453d-958a-a5f9f24219ab">
+      <extendedElement>
+        <elementSchemaMoniker Id="230b6fc3-2cdc-43a4-a8b4-ce6ff7379bff" />
+      </extendedElement>
+    </guidanceExtension>
+    <guidanceExtension Id="76814701-4cf9-4571-ab2d-80f2f9c6eedb">
+      <extendedElement>
+        <elementSchemaMoniker Id="fdfa1641-a89c-4719-826f-11f6cd5a53a4" />
+      </extendedElement>
+    </guidanceExtension>
+    <artifactExtension Id="5764d8ee-d4bb-4a90-91e9-f077dac886a9">
+      <extendedElement>
+        <patternSchemaMoniker Id="0409a2c6-826c-431c-a434-82b913ae6b2c" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="a209fa0a-6fbc-41c2-86f8-4bf36b78b585" onArtifactActivation="Select" onArtifactDeletion="DeleteAll">
+      <extendedElement>
+        <elementSchemaMoniker Id="49ed2bfc-3fc4-4595-8241-8ce44203e52a" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="a261520a-5616-4e27-8730-8b8a6e6cdb46">
+      <extendedElement>
+        <collectionSchemaMoniker Id="55c285d6-8bac-45a8-85dd-605beed51a26" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="7ef41be9-6164-4e16-9846-d49c9ff1e568" onArtifactActivation="Select">
+      <extendedElement>
+        <elementSchemaMoniker Id="37012148-5679-4bec-8299-e5ba271eac55" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="9ae42efe-08c7-461a-a8cf-14483b88402f">
+      <extendedElement>
+        <elementSchemaMoniker Id="39264c19-8dfa-480d-88a3-376e18f316d1" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="43a24a7a-82cd-4aae-a328-6ada34a431cc" onArtifactActivation="Open" onArtifactDeletion="DeleteAll">
+      <extendedElement>
+        <elementSchemaMoniker Id="b3174220-650b-47b0-8826-bad69eb4fd8a" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="b66fd41d-43f7-47dc-b943-3078275d2be3" onArtifactActivation="Open" onArtifactDeletion="DeleteAll">
+      <extendedElement>
+        <elementSchemaMoniker Id="91261008-3004-4244-bed7-321a33aefa75" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="1cbc553e-9e67-4cd5-babf-0f2acb4a4194">
+      <extendedElement>
+        <elementSchemaMoniker Id="47787b3d-2e27-4cf2-bc9f-f3c9c7bb1f35" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="0f42989f-c298-4fa6-a1cd-72de2fd8532d">
+      <extendedElement>
+        <elementSchemaMoniker Id="eccdd0e4-490d-4082-9f54-ec3a3246e0e0" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="99e2f651-5d7f-4d05-a056-4cab7f35608f">
+      <extendedElement>
+        <collectionSchemaMoniker Id="e0f60dd5-2d78-4c16-9780-e134ce626484" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="3a37e246-91c3-47e5-a5b2-362efecafc19" onArtifactActivation="Select">
+      <extendedElement>
+        <elementSchemaMoniker Id="f04997c2-ad43-4e17-a78f-e34267c9f5dc" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="6ad07b18-0116-4f2d-9d59-a5bdcbfb282a" onArtifactActivation="Select">
+      <extendedElement>
+        <elementSchemaMoniker Id="edfbc554-33cc-4e05-996b-3ae14a5ff773" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="de846db8-9f95-4aca-b6f9-c57426a90c15">
+      <extendedElement>
+        <elementSchemaMoniker Id="230b6fc3-2cdc-43a4-a8b4-ce6ff7379bff" />
+      </extendedElement>
+    </artifactExtension>
+    <artifactExtension Id="c17549b6-9972-4ae3-8ae0-bcd95c0e0c9c">
+      <extendedElement>
+        <elementSchemaMoniker Id="fdfa1641-a89c-4719-826f-11f6cd5a53a4" />
+      </extendedElement>
+    </artifactExtension>
+    <validationExtension Id="91a6df1f-a8b8-40b0-867a-47b9a442ee99" validationOnBuild="true" validationOnSave="true" validationOnMenu="true">
+      <extendedElement>
+        <patternSchemaMoniker Id="0409a2c6-826c-431c-a434-82b913ae6b2c" />
+      </extendedElement>
+    </validationExtension>
+    <dragDropSettings Id="b4cc5d33-a0fd-4a32-8baa-59329ebf5c72" commandId="fd1fc581-2163-4e79-86d8-d38547720091" wizardId="00000000-0000-0000-0000-000000000000" statusText="Drop project to associate to this element">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="1e970dd2-fe82-49b1-a69b-df89278cd0db" />
+      </extendedElement>
+      <dropConditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.DropSolutionProjectCondition",
+    "Properties": [
+      {
+        "Name": "Extension",
+        "Value": ".csproj",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</dropConditions>
+    </dragDropSettings>
+    <dragDropSettings Id="44643944-1393-4733-b288-1eea0b7d2580" commandId="5141cf7b-ecff-4e84-a80c-1f06da53660f" wizardId="00000000-0000-0000-0000-000000000000" statusText="Drop project to associate to this element">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="c6a0094d-ab94-415e-92a7-1ae603013f3b" />
+      </extendedElement>
+      <dropConditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.DropSolutionProjectCondition",
+    "Properties": [
+      {
+        "Name": "Extension",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</dropConditions>
+    </dragDropSettings>
+    <dragDropSettings Id="27aec9c5-5e24-4cd4-9b0b-fbe966b43f0e" commandId="c6c2bbe4-5826-41e1-b6c6-1ce6c55b2301" wizardId="00000000-0000-0000-0000-000000000000" statusText="Drop project to associate to this element">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="d885750e-bd7c-486e-a8aa-f3d0b7ec82b5" />
+      </extendedElement>
+      <dropConditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.DropSolutionProjectCondition",
+    "Properties": [
+      {
+        "Name": "Extension",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</dropConditions>
+    </dragDropSettings>
+    <dragDropSettings Id="cf34c4fa-a568-4403-821e-02286363d3b9" commandId="44369a40-7ad7-4bb4-a60d-4afc614b6a50" wizardId="00000000-0000-0000-0000-000000000000" statusText="Drop project to associate to this element">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="3567bd9e-3fbd-4bed-876c-87bdda58e704" />
+      </extendedElement>
+      <dropConditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.DropSolutionProjectCondition",
+    "Properties": [
+      {
+        "Name": "Extension",
+        "Value": "",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</dropConditions>
+    </dragDropSettings>
+    <dragDropSettings Id="797f15c5-daf6-4b7d-b859-1aaa9d0fb001" commandId="a4324267-979a-4564-a7be-f44583d19efb" wizardId="00000000-0000-0000-0000-000000000000" statusText="Drop project to associate to this element">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="55a665e9-ff5e-438b-bb8d-e4539a816ca7" />
+      </extendedElement>
+      <dropConditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.DropSolutionProjectCondition",
+    "Properties": [
+      {
+        "Name": "Extension",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</dropConditions>
+    </dragDropSettings>
+    <dragDropSettings Id="48556000-bb43-4af8-bd99-ec2e9680bce6" commandId="71774502-11ac-48a4-8a1b-82de69b9e26c" wizardId="00000000-0000-0000-0000-000000000000" statusText="Drop project to associate to this element">
+      <extendedElement>
+        <automationSettingsSchemaMoniker Id="5f3a776b-b78b-4662-aac5-75260c1e7190" />
+      </extendedElement>
+      <dropConditions>[
+  {
+    "TypeId": "NuPattern.Library.Conditions.DropSolutionProjectCondition",
+    "Properties": [
+      {
+        "Name": "Extension",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</dropConditions>
+    </dragDropSettings>
+  </dm0:extensions>
+  <pattern Id="0409a2c6-826c-431c-a434-82b913ae6b2c" name="Solution" displayName="Web Service Solution" description="A RESTful web services solution" codeIdentifier="Solution" isCustomizable="True" currentDiagramId="210a0741-0c64-4dcc-b4f2-00a21b099de4" patternLink="patternmanager://03de8c05-24f9-4a51-96d4-e7f7aab892a5">
+    <customizationPolicy name="CustomizationPolicySchema1">
+      <settings>
+        <setting propertyId="DisplayName" />
+        <setting propertyId="Description" />
+        <setting propertyId="ValidationRules" />
+        <setting propertyId="Icon" />
+      </settings>
+    </customizationPolicy>
+    <properties>
+      <property Id="8a6b698b-d71f-4b77-9f56-a2ed891a8fa8" name="GenerateCodeOnBuild" displayName="Generate Code On Build" description="Whether to generate code when the solution is built" codeIdentifier="GenerateCodeOnBuild" type="System.Boolean" category="CodeGen">
+        <customizationPolicy name="CustomizationPolicySchema1">
+          <settings>
+            <setting propertyId="DisplayName" />
+            <setting propertyId="Description" />
+            <setting propertyId="RawDefaultValue" />
+            <setting propertyId="IsVisible" />
+            <setting propertyId="IsReadOnly" />
+            <setting propertyId="Category" />
+            <setting propertyId="TypeConverterTypeName" />
+            <setting propertyId="EditorTypeName" />
+            <setting propertyId="RawValidationRules" />
+            <setting propertyId="RawValueProvider" />
+          </settings>
+        </customizationPolicy>
+        <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "True",
+  "ValueProvider": null
+}</defaultValue>
+      </property>
+    </properties>
+    <automationSettings>
+      <automationSettings Id="7e6498a5-574f-4ebb-a12a-e797ae2fe47d" name="ExecuteValidationCommand" displayName="Execute Validation Command" description="" isSystem="true" codeIdentifier="ExecuteValidationCommand" isCustomizable="False" automationType="Command">
+        <customizationPolicy name="CustomizationPolicySchema1">
+          <settings>
+            <setting propertyId="DisplayName" />
+            <setting propertyId="Description" />
+            <setting propertyId="Settings" />
+          </settings>
+        </customizationPolicy>
+      </automationSettings>
+      <automationSettings Id="68aed49a-7ea3-4783-9fb2-7fd319ac8670" name="OnBuildValidationEvent" displayName="On Build Validation Event" description="" isSystem="true" codeIdentifier="OnBuildValidationEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+        <customizationPolicy name="CustomizationPolicySchema1">
+          <settings>
+            <setting propertyId="DisplayName" />
+            <setting propertyId="Description" />
+            <setting propertyId="Settings" />
+          </settings>
+        </customizationPolicy>
+      </automationSettings>
+      <automationSettings Id="5c7d15f7-0788-420b-9c63-e87e3e235d28" name="OnSaveValidationEvent" displayName="On Save Validation Event" description="" isSystem="true" codeIdentifier="OnSaveValidationEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+        <customizationPolicy name="CustomizationPolicySchema1">
+          <settings>
+            <setting propertyId="DisplayName" />
+            <setting propertyId="Description" />
+            <setting propertyId="Settings" />
+          </settings>
+        </customizationPolicy>
+      </automationSettings>
+      <automationSettings Id="5a89e64e-4949-4da9-aabb-2d3e9da3be46" name="OnMenuValidationContextMenu" displayName="On Menu Validation Context Menu" description="" isSystem="true" codeIdentifier="OnMenuValidationContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+        <customizationPolicy name="CustomizationPolicySchema1">
+          <settings>
+            <setting propertyId="DisplayName" />
+            <setting propertyId="Description" />
+            <setting propertyId="Settings" />
+          </settings>
+        </customizationPolicy>
+      </automationSettings>
+      <automationSettings Id="3570db47-7259-4045-82c9-52a71f328bcb" name="SyncAllCodeOnMenu" displayName="Sync All Code On Menu" description="" codeIdentifier="SyncAllCodeOnMenu" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+        <customizationPolicy name="CustomizationPolicySchema1">
+          <settings>
+            <setting propertyId="DisplayName" />
+            <setting propertyId="Description" />
+            <setting propertyId="Settings" />
+          </settings>
+        </customizationPolicy>
+      </automationSettings>
+      <automationSettings Id="743791d3-c728-4ac8-a068-bbe37c03de9e" name="RaiseSyncEvent" displayName="Raise Sync Event" description="" codeIdentifier="RaiseSyncEvent" automationType="Command">
+        <customizationPolicy name="CustomizationPolicySchema1">
+          <settings>
+            <setting propertyId="DisplayName" />
+            <setting propertyId="Description" />
+            <setting propertyId="Settings" />
+          </settings>
+        </customizationPolicy>
+      </automationSettings>
+    </automationSettings>
+    <views>
+      <view Id="8fc008cc-cafc-4e4c-92f3-f77f636efdc3" name="DefaultView" displayName="Default View" description="Description for Solution.DefaultView" codeIdentifier="DefaultView" isDefault="true" diagramId="210a0741-0c64-4dcc-b4f2-00a21b099de4">
+        <customizationPolicy name="CustomizationPolicySchema1">
+          <settings>
+            <setting propertyId="DisplayName" />
+            <setting propertyId="Description" />
+            <setting propertyId="IsVisible" />
+            <setting propertyId="IsDefault" />
+          </settings>
+        </customizationPolicy>
+        <elements>
+          <element Id="37012148-5679-4bec-8299-e5ba271eac55" name="WebServices" displayName="Web Services" description="The web services project in the solution" codeIdentifier="WebServices" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/WebServicesProject.png">
+            <customizationPolicy name="CustomizationPolicySchema1">
+              <settings>
+                <setting propertyId="DisplayName" />
+                <setting propertyId="Description" />
+                <setting propertyId="ValidationRules" />
+                <setting propertyId="Icon" />
+                <setting propertyId="IsVisible" />
+              </settings>
+            </customizationPolicy>
+            <properties>
+              <property Id="32a779d6-db2d-442a-9f5b-cb8b2e461c2c" name="ServicesProject" displayName="Services Project" description="The project in the solution that contains the web services" codeIdentifier="ServicesProject" isReadOnly="true">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="RawDefaultValue" />
+                    <setting propertyId="IsVisible" />
+                    <setting propertyId="IsReadOnly" />
+                    <setting propertyId="Category" />
+                    <setting propertyId="TypeConverterTypeName" />
+                    <setting propertyId="EditorTypeName" />
+                    <setting propertyId="RawValidationRules" />
+                    <setting propertyId="RawValueProvider" />
+                  </settings>
+                </customizationPolicy>
+                <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": "The 'Web Services' project is not yet associated to a project in your solution. Please drag a project from 'Solution Explorer' onto the 'Web Services' element to reolve this error.",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</validationRules>
+                <valueProvider>{
+  "TypeId": "ServiceStackToolkit.Automation.ValueProviders.AssociatedProjectProvider",
+  "Properties": []
+}</valueProvider>
+              </property>
+              <property Id="440292b9-408e-4113-bb76-7d3c1c4850e7" name="RootNamespace" displayName="Root Namespace" description="The root namespace of the services project" codeIdentifier="RootNamespace" isReadOnly="true" category="CodeGen">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="RawDefaultValue" />
+                    <setting propertyId="IsVisible" />
+                    <setting propertyId="IsReadOnly" />
+                    <setting propertyId="Category" />
+                    <setting propertyId="TypeConverterTypeName" />
+                    <setting propertyId="EditorTypeName" />
+                    <setting propertyId="RawValidationRules" />
+                    <setting propertyId="RawValueProvider" />
+                  </settings>
+                </customizationPolicy>
+                <valueProvider>{
+  "TypeId": "NuPattern.Library.ValueProviders.RootNamespaceValueProvider",
+  "Properties": []
+}</valueProvider>
+              </property>
+              <property Id="2717ac2d-37e5-4d44-a422-8f54a3baa4de" name="ServiceDisplayName" displayName="Service Display Name" description="The display name of the service." codeIdentifier="ServiceDisplayName">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="RawDefaultValue" />
+                    <setting propertyId="IsVisible" />
+                    <setting propertyId="IsReadOnly" />
+                    <setting propertyId="Category" />
+                    <setting propertyId="TypeConverterTypeName" />
+                    <setting propertyId="EditorTypeName" />
+                    <setting propertyId="RawValidationRules" />
+                    <setting propertyId="RawValueProvider" />
+                  </settings>
+                </customizationPolicy>
+                <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "{Parent.Parent.InstanceName} Service",
+  "ValueProvider": null
+}</defaultValue>
+              </property>
+            </properties>
+            <automationSettings>
+              <automationSettings Id="1e970dd2-fe82-49b1-a69b-df89278cd0db" name="AssociateDroppedProjectOnDrop" displayName="Associate Dropped Project On Drop" description="" codeIdentifier="AssociateDroppedProjectOnDrop" automationType="Drag Drop Launch Point" classification="LaunchPoint">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="3d89eb81-ee21-49ed-8c59-5203fa853453" name="AssociateDroppedProject" displayName="Associate Dropped Project" description="" codeIdentifier="AssociateDroppedProject" automationType="Command">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="352d3e5e-b349-4347-9953-af30aa008c42" name="SelectArtifactCommand" displayName="Select Artifact Command" description="" isSystem="true" codeIdentifier="SelectArtifactCommand" isCustomizable="False" automationType="Command">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="d0c9d75b-1db0-4b9e-92e6-06cd0a80b937" name="SelectArtifactContextMenu" displayName="Select Artifact Context Menu" description="" isSystem="true" codeIdentifier="SelectArtifactContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="a6514656-bd12-4086-a744-ae475c58008f" name="ActivateArtifactEvent" displayName="Activate Artifact Event" description="" isSystem="true" codeIdentifier="ActivateArtifactEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="0cf33a95-a9e8-4662-901f-dcc3d40dc66b" name="AddNuGetPackages" displayName="Add Nu Get Packages" description="" codeIdentifier="AddNuGetPackages" automationType="Command">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="3567bd9e-3fbd-4bed-876c-87bdda58e704" name="AddNuGetPackagesToProjectOnDrop" displayName="Add Nu Get Packages To Project On Drop" description="" codeIdentifier="AddNuGetPackagesToProjectOnDrop" automationType="Drag Drop Launch Point" classification="LaunchPoint">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="7fe18bc1-399b-4405-b1ef-20b1fcb05ddb" name="GenerateAppHost" displayName="Generate App Host" description="" codeIdentifier="GenerateAppHost" automationType="Command">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="0b2a14ca-7ee2-4ba4-a19f-67d66040dfa9" name="GenerateAllCodeOnBuild" displayName="Generate All Code On Build" description="" codeIdentifier="GenerateAllCodeOnBuild" automationType="Event Launch Point" classification="LaunchPoint">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+              <automationSettings Id="d757adb5-e946-4d2f-b583-445711174d14" name="GenerateAllCodeOnSync" displayName="Generate All Code On Sync" description="" codeIdentifier="GenerateAllCodeOnSync" automationType="Event Launch Point" classification="LaunchPoint">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="Settings" />
+                  </settings>
+                </customizationPolicy>
+              </automationSettings>
+            </automationSettings>
+            <childElement>
+              <collection Id="55c285d6-8bac-45a8-85dd-605beed51a26" name="Services" displayName="Services" description="The REST web services in the project" codeIdentifier="Services">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="ValidationRules" />
+                    <setting propertyId="Icon" />
+                    <setting propertyId="IsVisible" />
+                  </settings>
+                </customizationPolicy>
+                <childElement cardinality="ZeroToMany" autoCreate="false">
+                  <element Id="49ed2bfc-3fc4-4595-8241-8ce44203e52a" name="Service" displayName="Service" description="A REST service in the project" codeIdentifier="Service" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/Service.png">
+                    <customizationPolicy name="CustomizationPolicySchema1">
+                      <settings>
+                        <setting propertyId="DisplayName" />
+                        <setting propertyId="Description" />
+                        <setting propertyId="ValidationRules" />
+                        <setting propertyId="Icon" />
+                        <setting propertyId="IsVisible" />
+                      </settings>
+                    </customizationPolicy>
+                    <properties>
+                      <property Id="575dfc82-259b-4e18-9b1a-fefc5107d994" name="ResourceName" displayName="Resource Name" description="The REST resource name (plural)" codeIdentifier="ResourceName" category="RESTful">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="RawDefaultValue" />
+                            <setting propertyId="IsVisible" />
+                            <setting propertyId="IsReadOnly" />
+                            <setting propertyId="Category" />
+                            <setting propertyId="TypeConverterTypeName" />
+                            <setting propertyId="EditorTypeName" />
+                            <setting propertyId="RawValidationRules" />
+                            <setting propertyId="RawValueProvider" />
+                          </settings>
+                        </customizationPolicy>
+                        <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "",
+  "ValueProvider": {
+    "TypeId": "ServiceStackToolkit.Automation.ValueProviders.ExpressionToLowercaseProvider",
+    "Properties": [
+      {
+        "Name": "Expression",
+        "Value": "{InstanceName}",
+        "ValueProvider": null
+      }
+    ]
+  }
+}</defaultValue>
+                      </property>
+                      <property Id="8465b7f3-8c6b-4f8a-8b28-0362cd9c25f2" name="ResourceNameSingular" displayName="Resource Name (Singular)" description="The REST resource name (singular)" codeIdentifier="ResourceNameSingular" isVisible="false" isReadOnly="true">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="RawDefaultValue" />
+                            <setting propertyId="IsVisible" />
+                            <setting propertyId="IsReadOnly" />
+                            <setting propertyId="Category" />
+                            <setting propertyId="TypeConverterTypeName" />
+                            <setting propertyId="EditorTypeName" />
+                            <setting propertyId="RawValidationRules" />
+                            <setting propertyId="RawValueProvider" />
+                          </settings>
+                        </customizationPolicy>
+                        <valueProvider>{
+  "TypeId": "ServiceStackToolkit.Automation.ValueProviders.ExpressionToSingularizeProvider",
+    "Properties": [
+      {
+        "Name": "Expression",
+        "Value": "{InstanceName}",
+        "ValueProvider": null
+      }
+    ]
+}</valueProvider>
+                      </property>
+                      <property Id="21329b1e-e35e-4b60-9d69-faf861ce077f" name="ResourceNamePlural" displayName="Resource Name (Plural)" description="The REST resource name (plural)" codeIdentifier="ResourceNamePlural" isVisible="false" isReadOnly="true">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="RawDefaultValue" />
+                            <setting propertyId="IsVisible" />
+                            <setting propertyId="IsReadOnly" />
+                            <setting propertyId="Category" />
+                            <setting propertyId="TypeConverterTypeName" />
+                            <setting propertyId="EditorTypeName" />
+                            <setting propertyId="RawValidationRules" />
+                            <setting propertyId="RawValueProvider" />
+                          </settings>
+                        </customizationPolicy>
+                        <valueProvider>{
+  "TypeId": "ServiceStackToolkit.Automation.ValueProviders.ExpressionToPluralizeProvider",
+  "Properties": [
+    {
+      "Name": "Expression",
+      "Value": "{InstanceName}",
+      "ValueProvider": null
+    }
+  ]
+}</valueProvider>
+                      </property>
+                      <property Id="3f0db28f-5dec-4b61-a63e-b458cc2f1530" name="StorageType" displayName="Storage Type" description="The type of storage support" codeIdentifier="StorageType" category="Persistence" typeConverterTypeName="ServiceStackToolkit.Automation.TypeConverters.StorageTypeEnumConverter, ServiceStackToolkit.Automation">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="RawDefaultValue" />
+                            <setting propertyId="IsVisible" />
+                            <setting propertyId="IsReadOnly" />
+                            <setting propertyId="Category" />
+                            <setting propertyId="TypeConverterTypeName" />
+                            <setting propertyId="EditorTypeName" />
+                            <setting propertyId="RawValidationRules" />
+                            <setting propertyId="RawValueProvider" />
+                          </settings>
+                        </customizationPolicy>
+                        <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "AzureTable",
+  "ValueProvider": null
+}</defaultValue>
+                      </property>
+                    </properties>
+                    <automationSettings>
+                      <automationSettings Id="b26bd509-4fa0-4979-88dc-09f572b3ad52" name="CreateDefaultVerbs" displayName="Create Default Verbs" description="" codeIdentifier="CreateDefaultVerbs" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="487871d9-8871-40d3-914b-ebb14d642321" name="CreateDefaultVerbsOnInstantiation" displayName="Create Default Verbs On Instantiation" description="" codeIdentifier="CreateDefaultVerbsOnInstantiation" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="558f8fe3-ee1a-4bda-b942-dbae7ab6c423" name="GenerateServiceClass" displayName="Generate Service Class" description="" codeIdentifier="GenerateServiceClass" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="f85c2351-400a-4063-ab91-ac28c15e2d75" name="GenerateServiceInterface" displayName="Generate Service Interface" description="" codeIdentifier="GenerateServiceInterface" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="cb568d48-cba3-43c8-a985-6e9a0a981215" name="GenerateAllCode" displayName="Generate All Code" description="" codeIdentifier="GenerateAllCode" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="b783e697-f69c-4ae2-aa17-f567889ee360" name="GenerateServiceUnitTestClass" displayName="Generate Service Unit Test Class" description="" codeIdentifier="GenerateServiceUnitTestClass" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="0fdc67b5-a661-4756-8856-a9987389b862" name="GenerateWorkflowInterface" displayName="Generate Workflow Interface" description="" codeIdentifier="GenerateWorkflowInterface" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="c5bb0570-3677-4c43-b84c-ae372ea25b80" name="GenerateServiceIntegrationTestClass" displayName="Generate Service Integration Test Class" description="" codeIdentifier="GenerateServiceIntegrationTestClass" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="dd5003cd-627c-413a-a64f-d5e0ce1acde2" name="SelectArtifactCommand" displayName="Select Artifact Command" description="" isSystem="true" codeIdentifier="SelectArtifactCommand" isCustomizable="False" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="c50d8ba8-da7d-4b9e-8882-af25152a4ec7" name="SelectArtifactContextMenu" displayName="Select Artifact Context Menu" description="" isSystem="true" codeIdentifier="SelectArtifactContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="2e9df787-e4ff-4c11-b2bb-521f94e5c156" name="ActivateArtifactEvent" displayName="Activate Artifact Event" description="" isSystem="true" codeIdentifier="ActivateArtifactEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="8d3b616f-1c2a-42dc-b406-8260a578b226" name="DeleteArtifactsCommand" displayName="Delete Artifacts Command" description="" isSystem="true" codeIdentifier="DeleteArtifactsCommand" isCustomizable="False" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="5a942822-76ca-4a82-ae03-9e669389e8be" name="DeleteArtifactsEvent" displayName="Delete Artifacts Event" description="" isSystem="true" codeIdentifier="DeleteArtifactsEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="98ff1a51-f130-4d50-af2b-a0cefccacf99" name="GenerateStorageProvider" displayName="Generate Storage Provider" description="" codeIdentifier="GenerateStorageProvider" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="74d0ab78-f5c0-497f-99b0-f4fe381a36de" name="GenerateStorageEntity" displayName="Generate Storage Entity" description="" codeIdentifier="GenerateStorageEntity" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="f29e1372-dd1c-429f-beb6-3ff92c088022" name="GenerateStorageEntityTable" displayName="Generate Storage Entity Table" description="" codeIdentifier="GenerateStorageEntityTable" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="37200416-3c22-4206-8335-a15c785b5a14" name="GenerateAllStorageCode" displayName="Generate All Storage Code" description="" codeIdentifier="GenerateAllStorageCode" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="4760f134-62f9-4d16-b161-3f6973d2fe0c" name="GenerateAllStorageCodeOnBuild" displayName="Generate All Storage Code On Build" description="" codeIdentifier="GenerateAllStorageCodeOnBuild" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="24fc237c-06fd-4320-a4fa-f6e1758d9c1d" name="GenerateDataContract" displayName="Generate Data Contract" description="" codeIdentifier="GenerateDataContract" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="515aa42f-b5df-46a9-b750-d513bf856492" name="GenerateDataContractInterface" displayName="Generate Data Contract Interface" description="" codeIdentifier="GenerateDataContractInterface" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="796ed7e0-3137-444c-9673-5d0120cb4798" name="GenerateAllStorageCodeOnSync" displayName="Generate All Storage Code On Sync" description="" codeIdentifier="GenerateAllStorageCodeOnSync" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="1c39d7a0-5bfa-42ef-b655-b9accaf67c78" name="GenerateAllCodeOnSync" displayName="Generate All Code On Sync" description="" codeIdentifier="GenerateAllCodeOnSync" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="0e6e1698-d57f-4e81-a6be-68c0a7d7bf6a" name="GenerateAllCodeOnBuild" displayName="Generate All Code On Build" description="" codeIdentifier="GenerateAllCodeOnBuild" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                    </automationSettings>
+                    <childElement cardinality="OneToMany" autoCreate="false" orderGroup="2">
+                      <element Id="39264c19-8dfa-480d-88a3-376e18f316d1" name="Verb" displayName="Verb" description="A HTTP verb" codeIdentifier="Verb" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/Verb.png">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="ValidationRules" />
+                            <setting propertyId="Icon" />
+                            <setting propertyId="IsVisible" />
+                          </settings>
+                        </customizationPolicy>
+                        <validationRules>[
+  {
+    "TypeId": "ServiceStackToolkit.Automation.ValidationRules.VerbIdRequestFieldValidator",
+    "Properties": []
+  }
+]</validationRules>
+                        <properties>
+                          <property Id="1662ceb4-7b76-42d9-aae6-1c8016703c6f" name="VerbType" displayName="Verb Type" description="The type of the verb (i.e. GET, POST, PUT or DELETE)" codeIdentifier="VerbType" category="RESTful" typeConverterTypeName="ServiceStackToolkit.Automation.TypeConverters.HttpVerbEnumConverter, ServiceStackToolkit.Automation">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="RawDefaultValue" />
+                                <setting propertyId="IsVisible" />
+                                <setting propertyId="IsReadOnly" />
+                                <setting propertyId="Category" />
+                                <setting propertyId="TypeConverterTypeName" />
+                                <setting propertyId="EditorTypeName" />
+                                <setting propertyId="RawValidationRules" />
+                                <setting propertyId="RawValueProvider" />
+                              </settings>
+                            </customizationPolicy>
+                            <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "GET",
+  "ValueProvider": null
+}</defaultValue>
+                            <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</validationRules>
+                          </property>
+                          <property Id="a165f4bb-eb59-49c2-8995-90ebb8584598" name="Route" displayName="Route" description="The REST route for the verb" codeIdentifier="Route" category="RESTful">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="RawDefaultValue" />
+                                <setting propertyId="IsVisible" />
+                                <setting propertyId="IsReadOnly" />
+                                <setting propertyId="Category" />
+                                <setting propertyId="TypeConverterTypeName" />
+                                <setting propertyId="EditorTypeName" />
+                                <setting propertyId="RawValidationRules" />
+                                <setting propertyId="RawValueProvider" />
+                              </settings>
+                            </customizationPolicy>
+                            <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "",
+  "ValueProvider": {
+    "TypeId": "ServiceStackToolkit.Automation.ValueProviders.ExpressionToLowercaseProvider",
+    "Properties": [
+      {
+        "Name": "Expression",
+        "Value": "/{Parent.ResourceNamePlural}",
+        "ValueProvider": null
+      }
+    ]
+  }
+}</defaultValue>
+                            <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "ServiceStackToolkit.Automation.ValidationRules.VerbRouteValidator",
+    "Properties": []
+  }
+]</validationRules>
+                          </property>
+                          <property Id="bec46ccd-48c8-451a-9b36-0399ee22fb8b" name="IsAuthorized" displayName="Is Authorized" description="Whether the request must be authorized" codeIdentifier="IsAuthorized" type="System.Boolean" category="Security">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="RawDefaultValue" />
+                                <setting propertyId="IsVisible" />
+                                <setting propertyId="IsReadOnly" />
+                                <setting propertyId="Category" />
+                                <setting propertyId="TypeConverterTypeName" />
+                                <setting propertyId="EditorTypeName" />
+                                <setting propertyId="RawValidationRules" />
+                                <setting propertyId="RawValueProvider" />
+                              </settings>
+                            </customizationPolicy>
+                            <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "True",
+  "ValueProvider": null
+}</defaultValue>
+                          </property>
+                          <property Id="0c9bd05e-a314-4a6b-ba4b-13f7c6403be9" name="HasMany" displayName="Has Many" description="Whether or not this verb handles multiple resources" codeIdentifier="HasMany" type="System.Boolean" category="Design">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="RawDefaultValue" />
+                                <setting propertyId="IsVisible" />
+                                <setting propertyId="IsReadOnly" />
+                                <setting propertyId="Category" />
+                                <setting propertyId="TypeConverterTypeName" />
+                                <setting propertyId="EditorTypeName" />
+                                <setting propertyId="RawValidationRules" />
+                                <setting propertyId="RawValueProvider" />
+                              </settings>
+                            </customizationPolicy>
+                            <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "False",
+  "ValueProvider": null
+}</defaultValue>
+                          </property>
+                          <property Id="68879287-c674-4fd5-be4c-6f96ec230a47" name="VerbResourceName" displayName="Verb Resource Name" description="The name of the resource for this verb" codeIdentifier="VerbResourceName" isReadOnly="true" category="Design">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="RawDefaultValue" />
+                                <setting propertyId="IsVisible" />
+                                <setting propertyId="IsReadOnly" />
+                                <setting propertyId="Category" />
+                                <setting propertyId="TypeConverterTypeName" />
+                                <setting propertyId="EditorTypeName" />
+                                <setting propertyId="RawValidationRules" />
+                                <setting propertyId="RawValueProvider" />
+                              </settings>
+                            </customizationPolicy>
+                            <valueProvider>{
+  "TypeId": "ServiceStackToolkit.Automation.ValueProviders.VerbResourceNameProvider",
+  "Properties": []
+}</valueProvider>
+                          </property>
+                          <property Id="b2aa8322-6009-42d5-aff3-1402bc10d366" name="IsTestingOnly" displayName="Is Testing Only" description="Whether this verb is for testing only (DEBUG=True)" codeIdentifier="IsTestingOnly" type="System.Boolean" category="CodeGen">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="RawDefaultValue" />
+                                <setting propertyId="IsVisible" />
+                                <setting propertyId="IsReadOnly" />
+                                <setting propertyId="Category" />
+                                <setting propertyId="TypeConverterTypeName" />
+                                <setting propertyId="EditorTypeName" />
+                                <setting propertyId="RawValidationRules" />
+                                <setting propertyId="RawValueProvider" />
+                              </settings>
+                            </customizationPolicy>
+                            <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "False",
+  "ValueProvider": null
+}</defaultValue>
+                          </property>
+                        </properties>
+                        <childElement>
+                          <element Id="b3174220-650b-47b0-8826-bad69eb4fd8a" name="ResponseContract" displayName="Response Contract" description="The contract of the response" codeIdentifier="ResponseContract" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/ResponseContract.png">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="ValidationRules" />
+                                <setting propertyId="Icon" />
+                                <setting propertyId="IsVisible" />
+                              </settings>
+                            </customizationPolicy>
+                            <properties>
+                              <property Id="cc91c239-63e6-4706-ad25-2860ad54adeb" name="ContractName" displayName="Contract Name" description="The name of the class for the contract" codeIdentifier="ContractName" isReadOnly="true" category="CodeGen">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="RawDefaultValue" />
+                                    <setting propertyId="IsVisible" />
+                                    <setting propertyId="IsReadOnly" />
+                                    <setting propertyId="Category" />
+                                    <setting propertyId="TypeConverterTypeName" />
+                                    <setting propertyId="EditorTypeName" />
+                                    <setting propertyId="RawValidationRules" />
+                                    <setting propertyId="RawValueProvider" />
+                                  </settings>
+                                </customizationPolicy>
+                                <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</validationRules>
+                                <valueProvider>{
+  "TypeId": "NuPattern.Library.ValueProviders.ExpressionValueProvider",
+  "Properties": [
+    {
+      "Name": "Expression",
+      "Value": "{Parent.InstanceName}{Parent.VerbResourceName}Response",
+      "ValueProvider": null
+    }
+  ]
+}</valueProvider>
+                              </property>
+                            </properties>
+                            <automationSettings>
+                              <automationSettings Id="f66ee8b2-3035-4f8c-8b67-7efb3879a43c" name="GenerateAllCodeOnBuild" displayName="Generate All Code On Build" description="" codeIdentifier="GenerateAllCodeOnBuild" automationType="Event Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="711b84e7-0eae-4de3-9d5c-a8eff7ec888c" name="GeneratesContract" displayName="Generates Contract" description="" codeIdentifier="GeneratesContract" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="2061af23-1cc8-4731-b3c9-e493bc037b5a" name="DeleteArtifactsCommand" displayName="Delete Artifacts Command" description="" isSystem="true" codeIdentifier="DeleteArtifactsCommand" isCustomizable="False" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="ba3b0563-594e-40b8-841d-abd31a3b2c7c" name="DeleteArtifactsEvent" displayName="Delete Artifacts Event" description="" isSystem="true" codeIdentifier="DeleteArtifactsEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="dd06e176-e31a-4c34-9623-760f470c91e2" name="OpenArtifactCommand" displayName="Open Artifact Command" description="" isSystem="true" codeIdentifier="OpenArtifactCommand" isCustomizable="False" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="12f99348-642a-4f7b-9f6d-64e7216624ad" name="OpenArtifactContextMenu" displayName="Open Artifact Context Menu" description="" isSystem="true" codeIdentifier="OpenArtifactContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="0c1c3253-3b0c-42ce-8e95-e43ca1262720" name="SelectArtifactCommand" displayName="Select Artifact Command" description="" isSystem="true" codeIdentifier="SelectArtifactCommand" isCustomizable="False" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="c3db8324-9c83-4377-bf06-7fa730fed9b3" name="SelectArtifactContextMenu" displayName="Select Artifact Context Menu" description="" isSystem="true" codeIdentifier="SelectArtifactContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="84511cd0-917f-48e7-8240-aa42f3bfe22a" name="ActivateArtifactEvent" displayName="Activate Artifact Event" description="" isSystem="true" codeIdentifier="ActivateArtifactEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="76abb1ee-a18f-4139-80d0-54a63659ee3e" name="GenerateAllCode" displayName="Generate All Code" description="" codeIdentifier="GenerateAllCode" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="3424ec45-5404-4b6d-a7bf-582f5879c2a8" name="GenerateAllCodeOnSync" displayName="Generate All Code On Sync" description="" codeIdentifier="GenerateAllCodeOnSync" automationType="Event Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                            </automationSettings>
+                            <childElement cardinality="ZeroToMany" autoCreate="false">
+                              <element Id="eccdd0e4-490d-4082-9f54-ec3a3246e0e0" name="ResponseField" displayName="Response Field" description="A field to be returned in the response" codeIdentifier="ResponseField" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/ResponseField.png">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="ValidationRules" />
+                                    <setting propertyId="Icon" />
+                                    <setting propertyId="IsVisible" />
+                                  </settings>
+                                </customizationPolicy>
+                                <properties>
+                                  <property Id="0a771aa1-c6f7-42e5-9942-aee76bb99e3b" name="DataType" displayName="Data Type" description="The data type of the field" codeIdentifier="DataType" category="CodeGen" editorTypeName="ServiceStackToolkit.Automation.TypeEditors.AnyDataTypePicker, ServiceStackToolkit.Automation">
+                                    <customizationPolicy name="CustomizationPolicySchema1">
+                                      <settings>
+                                        <setting propertyId="DisplayName" />
+                                        <setting propertyId="Description" />
+                                        <setting propertyId="RawDefaultValue" />
+                                        <setting propertyId="IsVisible" />
+                                        <setting propertyId="IsReadOnly" />
+                                        <setting propertyId="Category" />
+                                        <setting propertyId="TypeConverterTypeName" />
+                                        <setting propertyId="EditorTypeName" />
+                                        <setting propertyId="RawValidationRules" />
+                                        <setting propertyId="RawValueProvider" />
+                                      </settings>
+                                    </customizationPolicy>
+                                    <defaultValue>
+                                      {
+                                      "Name": "DefaultValue",
+                                      "Value": "System.String",
+                                      "ValueProvider": null
+                                      }
+                                    </defaultValue>
+                                    <validationRules>
+                                      [
+                                      {
+                                      "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+                                      "Properties": [
+                                      {
+                                      "Name": "ErrorMessage",
+                                      "Value": null,
+                                      "ValueProvider": null
+                                      }
+                                      ]
+                                      }
+                                      ]
+                                    </validationRules>
+                                  </property>
+                                  <property Id="22c1767c-a887-4434-9aef-9257a26b3c94" name="SerializedName" displayName="Serialized Name" description="Optional. The name of the field as it is serialized in the response." codeIdentifier="SerializedName" category="RESTful">
+                                    <customizationPolicy name="CustomizationPolicySchema1">
+                                      <settings>
+                                        <setting propertyId="DisplayName" />
+                                        <setting propertyId="Description" />
+                                        <setting propertyId="RawDefaultValue" />
+                                        <setting propertyId="IsVisible" />
+                                        <setting propertyId="IsReadOnly" />
+                                        <setting propertyId="Category" />
+                                        <setting propertyId="TypeConverterTypeName" />
+                                        <setting propertyId="EditorTypeName" />
+                                        <setting propertyId="RawValidationRules" />
+                                        <setting propertyId="RawValueProvider" />
+                                      </settings>
+                                    </customizationPolicy>
+                                  </property>
+                                  <property Id="9ea38535-9a19-415d-b0f1-14881c33e53c" name="Description" displayName="Description" description="The description of the field." codeIdentifier="Description" category="CodeGen">
+                                    <customizationPolicy name="CustomizationPolicySchema1">
+                                      <settings>
+                                        <setting propertyId="DisplayName" />
+                                        <setting propertyId="Description" />
+                                        <setting propertyId="RawDefaultValue" />
+                                        <setting propertyId="IsVisible" />
+                                        <setting propertyId="IsReadOnly" />
+                                        <setting propertyId="Category" />
+                                        <setting propertyId="TypeConverterTypeName" />
+                                        <setting propertyId="EditorTypeName" />
+                                        <setting propertyId="RawValidationRules" />
+                                        <setting propertyId="RawValueProvider" />
+                                      </settings>
+                                    </customizationPolicy>
+                                  </property>
+                                </properties>
+                              </element>
+                            </childElement>
+                          </element>
+                        </childElement>
+                        <childElement>
+                          <element Id="91261008-3004-4244-bed7-321a33aefa75" name="RequestContract" displayName="Request Contract" description="The contract of the request" codeIdentifier="RequestContract" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/RequestContract.png">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="ValidationRules" />
+                                <setting propertyId="Icon" />
+                                <setting propertyId="IsVisible" />
+                              </settings>
+                            </customizationPolicy>
+                            <properties>
+                              <property Id="8099e9ca-c34d-444a-8907-dc7b835a0acd" name="ContractName" displayName="Contract Name" description="The name of the class for the contract" codeIdentifier="ContractName" isReadOnly="true" category="CodeGen">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="RawDefaultValue" />
+                                    <setting propertyId="IsVisible" />
+                                    <setting propertyId="IsReadOnly" />
+                                    <setting propertyId="Category" />
+                                    <setting propertyId="TypeConverterTypeName" />
+                                    <setting propertyId="EditorTypeName" />
+                                    <setting propertyId="RawValidationRules" />
+                                    <setting propertyId="RawValueProvider" />
+                                  </settings>
+                                </customizationPolicy>
+                                <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</validationRules>
+                                <valueProvider>{
+  "TypeId": "NuPattern.Library.ValueProviders.ExpressionValueProvider",
+  "Properties": [
+    {
+      "Name": "Expression",
+      "Value": "{Parent.InstanceName}{Parent.VerbResourceName}",
+      "ValueProvider": null
+    }
+  ]
+}</valueProvider>
+                              </property>
+                            </properties>
+                            <automationSettings>
+                              <automationSettings Id="d9822d57-848e-4def-be1a-8fda39bede64" name="GenerateAllCodeOnBuild" displayName="Generate All Code On Build" description="" codeIdentifier="GenerateAllCodeOnBuild" automationType="Event Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="99838967-5acf-4243-a578-42a202985ec6" name="GeneratesContract" displayName="Generates Contract" description="" codeIdentifier="GeneratesContract" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="3b718907-3d91-4c23-940d-5e70ff414769" name="GeneratesValidator" displayName="Generates Validator" description="" codeIdentifier="GeneratesValidator" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="b0afbcbb-5697-46d8-b4b4-484d09564c60" name="DeleteArtifactsCommand" displayName="Delete Artifacts Command" description="" isSystem="true" codeIdentifier="DeleteArtifactsCommand" isCustomizable="False" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="215b13c1-42c7-4712-9f64-63afae3e8ea7" name="DeleteArtifactsEvent" displayName="Delete Artifacts Event" description="" isSystem="true" codeIdentifier="DeleteArtifactsEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="790628c8-2c23-47bc-ab7d-0a23b73ccdab" name="OpenArtifactCommand" displayName="Open Artifact Command" description="" isSystem="true" codeIdentifier="OpenArtifactCommand" isCustomizable="False" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="fc46c654-3f24-4fd4-a902-387a705505cc" name="OpenArtifactContextMenu" displayName="Open Artifact Context Menu" description="" isSystem="true" codeIdentifier="OpenArtifactContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="7aba1cc7-681e-4152-8fa1-7dcd2a17686b" name="SelectArtifactCommand" displayName="Select Artifact Command" description="" isSystem="true" codeIdentifier="SelectArtifactCommand" isCustomizable="False" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="e4c23aca-7c04-46dd-a89c-ff3edf207a95" name="SelectArtifactContextMenu" displayName="Select Artifact Context Menu" description="" isSystem="true" codeIdentifier="SelectArtifactContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="f8d3f750-6260-4ade-b356-ad509b8ee384" name="ActivateArtifactEvent" displayName="Activate Artifact Event" description="" isSystem="true" codeIdentifier="ActivateArtifactEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="a7aa6d13-94d3-4f05-8a93-eb750ed4203e" name="GenerateAllCode" displayName="Generate All Code" description="" codeIdentifier="GenerateAllCode" automationType="Command">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                              <automationSettings Id="4bea2344-19e6-4670-a082-fb8cbdd9fbd9" name="GenerateAllCodeOnSync" displayName="Generate All Code On Sync" description="" codeIdentifier="GenerateAllCodeOnSync" automationType="Event Launch Point" classification="LaunchPoint">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="Settings" />
+                                  </settings>
+                                </customizationPolicy>
+                              </automationSettings>
+                            </automationSettings>
+                            <childElement cardinality="ZeroToMany" autoCreate="false">
+                              <element Id="47787b3d-2e27-4cf2-bc9f-f3c9c7bb1f35" name="RequestField" displayName="Request Field" description="A field to be provided in the request" codeIdentifier="RequestField" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/RequestField.png">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="ValidationRules" />
+                                    <setting propertyId="Icon" />
+                                    <setting propertyId="IsVisible" />
+                                  </settings>
+                                </customizationPolicy>
+                                <properties>
+                                  <property Id="160c2c15-8295-451a-8c7a-daf88dcf998e" name="IsRequired" displayName="Is Required" description="Whether a value for the field is required in request validation." codeIdentifier="IsRequired" type="System.Boolean" category="Validation">
+                                    <customizationPolicy name="CustomizationPolicySchema1">
+                                      <settings>
+                                        <setting propertyId="DisplayName" />
+                                        <setting propertyId="Description" />
+                                        <setting propertyId="RawDefaultValue" />
+                                        <setting propertyId="IsVisible" />
+                                        <setting propertyId="IsReadOnly" />
+                                        <setting propertyId="Category" />
+                                        <setting propertyId="TypeConverterTypeName" />
+                                        <setting propertyId="EditorTypeName" />
+                                        <setting propertyId="RawValidationRules" />
+                                        <setting propertyId="RawValueProvider" />
+                                      </settings>
+                                    </customizationPolicy>
+                                    <defaultValue>
+                                      {
+                                      "Name": "DefaultValue",
+                                      "Value": "True",
+                                      "ValueProvider": null
+                                      }
+                                    </defaultValue>
+                                  </property>
+                                  <property Id="82f85a7a-b6b0-45b3-944b-1a841c5b9792" name="DataType" displayName="Data Type" description="The data type of the field" codeIdentifier="DataType" category="CodeGen">
+                                    <customizationPolicy name="CustomizationPolicySchema1">
+                                      <settings>
+                                        <setting propertyId="DisplayName" />
+                                        <setting propertyId="Description" />
+                                        <setting propertyId="RawDefaultValue" />
+                                        <setting propertyId="IsVisible" />
+                                        <setting propertyId="IsReadOnly" />
+                                        <setting propertyId="Category" />
+                                        <setting propertyId="TypeConverterTypeName" />
+                                        <setting propertyId="EditorTypeName" />
+                                        <setting propertyId="RawValidationRules" />
+                                        <setting propertyId="RawValueProvider" />
+                                      </settings>
+                                    </customizationPolicy>
+                                    <defaultValue>
+                                      {
+                                      "Name": "DefaultValue",
+                                      "Value": "System.String",
+                                      "ValueProvider": null
+                                      }
+                                    </defaultValue>
+                                    <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  },
+  {
+    "TypeId": "ServiceStackToolkit.Automation.ValidationRules.RoutedRequestFieldDataTypeValidator",
+    "Properties": []
+  }
+]</validationRules>
+                                  </property>
+                                  <property Id="de82d8c7-8c77-41c1-91e1-fa4257a0da3c" name="IsInRoute" displayName="Is In Route" description="Whether this field is included in the 'Route' for this verb." codeIdentifier="IsInRoute" type="System.Boolean" isReadOnly="true" category="RESTful">
+                                    <customizationPolicy name="CustomizationPolicySchema1">
+                                      <settings>
+                                        <setting propertyId="DisplayName" />
+                                        <setting propertyId="Description" />
+                                        <setting propertyId="RawDefaultValue" />
+                                        <setting propertyId="IsVisible" />
+                                        <setting propertyId="IsReadOnly" />
+                                        <setting propertyId="Category" />
+                                        <setting propertyId="TypeConverterTypeName" />
+                                        <setting propertyId="EditorTypeName" />
+                                        <setting propertyId="RawValidationRules" />
+                                        <setting propertyId="RawValueProvider" />
+                                      </settings>
+                                    </customizationPolicy>
+                                    <valueProvider>{
+  "TypeId": "ServiceStackToolkit.Automation.ValueProviders.RequestFieldIsInRouteProvider",
+  "Properties": []
+}</valueProvider>
+                                  </property>
+                                  <property Id="25a0c706-d216-4f33-b2c8-49f6813c4a63" name="SerializedName" displayName="Serialized Name" description="Optional. The name of the field as it is serialized in the request." codeIdentifier="SerializedName" category="RESTful">
+                                    <customizationPolicy name="CustomizationPolicySchema1">
+                                      <settings>
+                                        <setting propertyId="DisplayName" />
+                                        <setting propertyId="Description" />
+                                        <setting propertyId="RawDefaultValue" />
+                                        <setting propertyId="IsVisible" />
+                                        <setting propertyId="IsReadOnly" />
+                                        <setting propertyId="Category" />
+                                        <setting propertyId="TypeConverterTypeName" />
+                                        <setting propertyId="EditorTypeName" />
+                                        <setting propertyId="RawValidationRules" />
+                                        <setting propertyId="RawValueProvider" />
+                                      </settings>
+                                    </customizationPolicy>
+                                  </property>
+                                  <property Id="ec6965ad-716b-40a8-8ae7-521d5f27911c" name="Description" displayName="Description" description="The description of the field." codeIdentifier="Description" category="CodeGen">
+                                    <customizationPolicy name="CustomizationPolicySchema1">
+                                      <settings>
+                                        <setting propertyId="DisplayName" />
+                                        <setting propertyId="Description" />
+                                        <setting propertyId="RawDefaultValue" />
+                                        <setting propertyId="IsVisible" />
+                                        <setting propertyId="IsReadOnly" />
+                                        <setting propertyId="Category" />
+                                        <setting propertyId="TypeConverterTypeName" />
+                                        <setting propertyId="EditorTypeName" />
+                                        <setting propertyId="RawValidationRules" />
+                                        <setting propertyId="RawValueProvider" />
+                                      </settings>
+                                    </customizationPolicy>
+                                  </property>
+                                </properties>
+                              </element>
+                            </childElement>
+                          </element>
+                        </childElement>
+                      </element>
+                    </childElement>
+                    <childElement>
+                      <element Id="230b6fc3-2cdc-43a4-a8b4-ce6ff7379bff" name="Resource" displayName="Resource" description="The resource being provided by the service" codeIdentifier="Resource" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/Resource.png">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="ValidationRules" />
+                            <setting propertyId="Icon" />
+                            <setting propertyId="IsVisible" />
+                          </settings>
+                        </customizationPolicy>
+                        <properties>
+                          <property Id="998a796a-73fd-4e73-8c9b-51d0a66c7849" name="ResourceName" displayName="Resource Name" description="The name of the resource" codeIdentifier="ResourceName" isReadOnly="true" category="RESTful">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="RawDefaultValue" />
+                                <setting propertyId="IsVisible" />
+                                <setting propertyId="IsReadOnly" />
+                                <setting propertyId="Category" />
+                                <setting propertyId="TypeConverterTypeName" />
+                                <setting propertyId="EditorTypeName" />
+                                <setting propertyId="RawValidationRules" />
+                                <setting propertyId="RawValueProvider" />
+                              </settings>
+                            </customizationPolicy>
+                            <valueProvider>{
+  "TypeId": "NuPattern.Library.ValueProviders.ExpressionValueProvider",
+  "Properties": [
+    {
+      "Name": "Expression",
+      "Value": "{Parent.ResourceNameSingular}",
+      "ValueProvider": null
+    }
+  ]
+}</valueProvider>
+                          </property>
+                        </properties>
+                        <childElement cardinality="ZeroToMany" autoCreate="false">
+                          <element Id="fdfa1641-a89c-4719-826f-11f6cd5a53a4" name="ResourceField" displayName="Resource Field" description="A field of the resource" codeIdentifier="ResourceField" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/ResourceField.png">
+                            <customizationPolicy name="CustomizationPolicySchema1">
+                              <settings>
+                                <setting propertyId="DisplayName" />
+                                <setting propertyId="Description" />
+                                <setting propertyId="ValidationRules" />
+                                <setting propertyId="Icon" />
+                                <setting propertyId="IsVisible" />
+                              </settings>
+                            </customizationPolicy>
+                            <properties>
+                              <property Id="697ea1d7-6270-4185-a7ca-a7f00b27c2dc" name="DataType" displayName="Data Type" description="The data type of the field" codeIdentifier="DataType" category="CodeGen" editorTypeName="ServiceStackToolkit.Automation.TypeEditors.AnyDataTypePicker, ServiceStackToolkit.Automation">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="RawDefaultValue" />
+                                    <setting propertyId="IsVisible" />
+                                    <setting propertyId="IsReadOnly" />
+                                    <setting propertyId="Category" />
+                                    <setting propertyId="TypeConverterTypeName" />
+                                    <setting propertyId="EditorTypeName" />
+                                    <setting propertyId="RawValidationRules" />
+                                    <setting propertyId="RawValueProvider" />
+                                  </settings>
+                                </customizationPolicy>
+                                <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "System.String",
+  "ValueProvider": null
+}</defaultValue>
+                                <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": null,
+        "ValueProvider": null
+      }
+    ]
+  }
+]</validationRules>
+                              </property>
+                              <property Id="4009bdbd-461a-41ca-96a5-ab2d61feb63e" name="IsPersisted" displayName="Is Persisted" description="Whether the field is persisted in storage" codeIdentifier="IsPersisted" type="System.Boolean">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="RawDefaultValue" />
+                                    <setting propertyId="IsVisible" />
+                                    <setting propertyId="IsReadOnly" />
+                                    <setting propertyId="Category" />
+                                    <setting propertyId="TypeConverterTypeName" />
+                                    <setting propertyId="EditorTypeName" />
+                                    <setting propertyId="RawValidationRules" />
+                                    <setting propertyId="RawValueProvider" />
+                                  </settings>
+                                </customizationPolicy>
+                                <defaultValue>{
+  "Name": "DefaultValue",
+  "Value": "True",
+  "ValueProvider": null
+}</defaultValue>
+                              </property>
+                              <property Id="73456859-bf32-4830-96d4-00d2d453a120" name="Description" displayName="Description" description="The description of the field." codeIdentifier="Description" category="CodeGen">
+                                <customizationPolicy name="CustomizationPolicySchema1">
+                                  <settings>
+                                    <setting propertyId="DisplayName" />
+                                    <setting propertyId="Description" />
+                                    <setting propertyId="RawDefaultValue" />
+                                    <setting propertyId="IsVisible" />
+                                    <setting propertyId="IsReadOnly" />
+                                    <setting propertyId="Category" />
+                                    <setting propertyId="TypeConverterTypeName" />
+                                    <setting propertyId="EditorTypeName" />
+                                    <setting propertyId="RawValidationRules" />
+                                    <setting propertyId="RawValueProvider" />
+                                  </settings>
+                                </customizationPolicy>
+                              </property>
+                            </properties>
+                          </element>
+                        </childElement>
+                      </element>
+                    </childElement>
+                  </element>
+                </childElement>
+              </collection>
+            </childElement>
+            <childElement>
+              <collection Id="e0f60dd5-2d78-4c16-9780-e134ce626484" name="Tests" displayName="Tests" description="Tests for the web service" codeIdentifier="Tests">
+                <customizationPolicy name="CustomizationPolicySchema1">
+                  <settings>
+                    <setting propertyId="DisplayName" />
+                    <setting propertyId="Description" />
+                    <setting propertyId="ValidationRules" />
+                    <setting propertyId="Icon" />
+                    <setting propertyId="IsVisible" />
+                  </settings>
+                </customizationPolicy>
+                <childElement>
+                  <element Id="f04997c2-ad43-4e17-a78f-e34267c9f5dc" name="UnitTests" displayName="Unit Tests" description="Unit tests for the web service" codeIdentifier="UnitTests" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/UnitTestsProject.png">
+                    <customizationPolicy name="CustomizationPolicySchema1">
+                      <settings>
+                        <setting propertyId="DisplayName" />
+                        <setting propertyId="Description" />
+                        <setting propertyId="ValidationRules" />
+                        <setting propertyId="Icon" />
+                        <setting propertyId="IsVisible" />
+                      </settings>
+                    </customizationPolicy>
+                    <properties>
+                      <property Id="78b59324-203a-4fd5-87a0-94710a260a93" name="TestProject" displayName="Test Project" description="The project in the solution that contains the tests" codeIdentifier="TestProject" isReadOnly="true">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="RawDefaultValue" />
+                            <setting propertyId="IsVisible" />
+                            <setting propertyId="IsReadOnly" />
+                            <setting propertyId="Category" />
+                            <setting propertyId="TypeConverterTypeName" />
+                            <setting propertyId="EditorTypeName" />
+                            <setting propertyId="RawValidationRules" />
+                            <setting propertyId="RawValueProvider" />
+                          </settings>
+                        </customizationPolicy>
+                        <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": "The 'Unit Tests' project is not yet associated to a project in your solution. Please drag a project from 'Solution Explorer' onto the 'Unit Tests' element to reolve this error.",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</validationRules>
+                        <valueProvider>{
+  "TypeId": "ServiceStackToolkit.Automation.ValueProviders.AssociatedProjectProvider",
+  "Properties": []
+}</valueProvider>
+                      </property>
+                      <property Id="b9437035-1b4d-40b1-91e6-1796c1c7fa80" name="RootNamespace" displayName="Root Namespace" description="The root namespace of the services project" codeIdentifier="RootNamespace" isReadOnly="true" category="CodeGen">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="RawDefaultValue" />
+                            <setting propertyId="IsVisible" />
+                            <setting propertyId="IsReadOnly" />
+                            <setting propertyId="Category" />
+                            <setting propertyId="TypeConverterTypeName" />
+                            <setting propertyId="EditorTypeName" />
+                            <setting propertyId="RawValidationRules" />
+                            <setting propertyId="RawValueProvider" />
+                          </settings>
+                        </customizationPolicy>
+                        <valueProvider>{
+  "TypeId": "NuPattern.Library.ValueProviders.RootNamespaceValueProvider",
+  "Properties": []
+}</valueProvider>
+                      </property>
+                    </properties>
+                    <automationSettings>
+                      <automationSettings Id="4c49cc77-25e5-47e0-a6a9-fd838d131a64" name="AssociateDroppedProject" displayName="Associate Dropped Project" description="" codeIdentifier="AssociateDroppedProject" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="c6a0094d-ab94-415e-92a7-1ae603013f3b" name="AssociateDroppedProjectOnDrop" displayName="Associate Dropped Project On Drop" description="" codeIdentifier="AssociateDroppedProjectOnDrop" automationType="Drag Drop Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="ddbfcd45-42b4-4646-aa2f-a218ae024a7f" name="SelectArtifactCommand" displayName="Select Artifact Command" description="" isSystem="true" codeIdentifier="SelectArtifactCommand" isCustomizable="False" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="6c194c45-c809-4784-9398-ad33ea835135" name="SelectArtifactContextMenu" displayName="Select Artifact Context Menu" description="" isSystem="true" codeIdentifier="SelectArtifactContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="6e9713e7-9bd6-4429-88f5-720d14935635" name="ActivateArtifactEvent" displayName="Activate Artifact Event" description="" isSystem="true" codeIdentifier="ActivateArtifactEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="745af6a3-a135-4bb9-a38d-9075e33d2243" name="AddNuGetPackages" displayName="Add Nu Get Packages" description="" codeIdentifier="AddNuGetPackages" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="5f3a776b-b78b-4662-aac5-75260c1e7190" name="AddNuGetPackagesToProjectOnDrop" displayName="Add Nu Get Packages To Project On Drop" description="" codeIdentifier="AddNuGetPackagesToProjectOnDrop" automationType="Drag Drop Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                    </automationSettings>
+                  </element>
+                </childElement>
+                <childElement>
+                  <element Id="edfbc554-33cc-4e05-996b-3ae14a5ff773" name="IntegrationTests" displayName="Integration Tests" description="Integration tests for the web service" codeIdentifier="IntegrationTests" icon="pack://application:,,,/ServiceStackToolkit;component/Resources/IntegrationTestsProject.png">
+                    <customizationPolicy name="CustomizationPolicySchema1">
+                      <settings>
+                        <setting propertyId="DisplayName" />
+                        <setting propertyId="Description" />
+                        <setting propertyId="ValidationRules" />
+                        <setting propertyId="Icon" />
+                        <setting propertyId="IsVisible" />
+                      </settings>
+                    </customizationPolicy>
+                    <properties>
+                      <property Id="354bf50c-5316-4172-8b32-ed0ba19dcb2c" name="TestProject" displayName="Test Project" description="The project in the solution that contains the tests" codeIdentifier="TestProject" isReadOnly="true">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="RawDefaultValue" />
+                            <setting propertyId="IsVisible" />
+                            <setting propertyId="IsReadOnly" />
+                            <setting propertyId="Category" />
+                            <setting propertyId="TypeConverterTypeName" />
+                            <setting propertyId="EditorTypeName" />
+                            <setting propertyId="RawValidationRules" />
+                            <setting propertyId="RawValueProvider" />
+                          </settings>
+                        </customizationPolicy>
+                        <validationRules>[
+  {
+    "TypeId": "NuPattern.Library.ValidationRules.PropertyRequiredValidationRule",
+    "Properties": [
+      {
+        "Name": "ErrorMessage",
+        "Value": "The 'Integration Tests' project is not yet associated to a project in your solution. Please drag a project from 'Solution Explorer' onto the 'Integration Tests' element to reolve this error.",
+        "ValueProvider": null
+      }
+    ]
+  }
+]</validationRules>
+                        <valueProvider>{
+  "TypeId": "ServiceStackToolkit.Automation.ValueProviders.AssociatedProjectProvider",
+  "Properties": []
+}</valueProvider>
+                      </property>
+                      <property Id="b73b34e3-2ace-4e02-aa7b-ca1517c2d1b7" name="RootNamespace" displayName="Root Namespace" description="The root namespace of the services project" codeIdentifier="RootNamespace" isReadOnly="true" category="CodeGen">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="RawDefaultValue" />
+                            <setting propertyId="IsVisible" />
+                            <setting propertyId="IsReadOnly" />
+                            <setting propertyId="Category" />
+                            <setting propertyId="TypeConverterTypeName" />
+                            <setting propertyId="EditorTypeName" />
+                            <setting propertyId="RawValidationRules" />
+                            <setting propertyId="RawValueProvider" />
+                          </settings>
+                        </customizationPolicy>
+                        <valueProvider>{
+  "TypeId": "NuPattern.Library.ValueProviders.RootNamespaceValueProvider",
+  "Properties": []
+}</valueProvider>
+                      </property>
+                    </properties>
+                    <automationSettings>
+                      <automationSettings Id="1312f197-b16e-40eb-ab28-9ae184d7c968" name="AssociateDroppedProject" displayName="Associate Dropped Project" description="" codeIdentifier="AssociateDroppedProject" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="d885750e-bd7c-486e-a8aa-f3d0b7ec82b5" name="AssociateDroppedProjectOnDrop" displayName="Associate Dropped Project On Drop" description="" codeIdentifier="AssociateDroppedProjectOnDrop" automationType="Drag Drop Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="94635bdb-7cea-4c80-b91c-96f07f6f39e1" name="SelectArtifactCommand" displayName="Select Artifact Command" description="" isSystem="true" codeIdentifier="SelectArtifactCommand" isCustomizable="False" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="12dbc189-da5a-4062-8a3b-18a3b6356244" name="SelectArtifactContextMenu" displayName="Select Artifact Context Menu" description="" isSystem="true" codeIdentifier="SelectArtifactContextMenu" isCustomizable="False" automationType="ContextMenu Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="bad5ee60-9cb5-4ab8-9c94-12b073ea3ad1" name="ActivateArtifactEvent" displayName="Activate Artifact Event" description="" isSystem="true" codeIdentifier="ActivateArtifactEvent" isCustomizable="False" automationType="Event Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="baec0e80-97aa-4f08-a47f-af3e22fb8ede" name="AddNuGetPackages" displayName="Add Nu Get Packages" description="" codeIdentifier="AddNuGetPackages" automationType="Command">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                      <automationSettings Id="55a665e9-ff5e-438b-bb8d-e4539a816ca7" name="AddNuGetPackagesToProjectOnDrop" displayName="Add Nu Get Packages To Project On Drop" description="" codeIdentifier="AddNuGetPackagesToProjectOnDrop" automationType="Drag Drop Launch Point" classification="LaunchPoint">
+                        <customizationPolicy name="CustomizationPolicySchema1">
+                          <settings>
+                            <setting propertyId="DisplayName" />
+                            <setting propertyId="Description" />
+                            <setting propertyId="Settings" />
+                          </settings>
+                        </customizationPolicy>
+                      </automationSettings>
+                    </automationSettings>
+                  </element>
+                </childElement>
+              </collection>
+            </childElement>
+          </element>
+        </elements>
+      </view>
+    </views>
+  </pattern>
+</patternModel>

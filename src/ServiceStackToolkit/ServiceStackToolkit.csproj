@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>true</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>false</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{AAFCAAEC-FE35-443E-9DBC-CB2EB6A927FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceStackToolkit</RootNamespace>
+    <AssemblyName>ServiceStackToolkit</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Microsoft.VisualStudio.ExtensibilityHosting, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="NuPattern.Common">
+      <HintPath>$(PatternToolkitRuntime)\NuPattern.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="NuPattern.Library">
+      <HintPath>$(PatternToolkitRuntime)\NuPattern.Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="NuPattern.Presentation">
+      <HintPath>$(PatternToolkitRuntime)\NuPattern.Presentation.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="NuPattern.Runtime.Extensibility">
+      <HintPath>$(PatternToolkitRuntime)\NuPattern.Runtime.Extensibility.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="NuPattern.VisualStudio">
+      <HintPath>$(PatternToolkitRuntime)\NuPattern.VisualStudio.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="$(PatternToolkitRuntime)\GeneratedCode\LibrarySchema.xsd">
+      <Visible>true</Visible>
+      <Link>Properties\Schemas\LibrarySchema.xsd</Link>
+      <FixedLink>
+      </FixedLink>
+    </Content>
+    <Content Include="$(PatternToolkitRuntime)\GeneratedCode\PatternModelSchema.xsd">
+      <Visible>true</Visible>
+      <Link>Properties\Schemas\PatternModelSchema.xsd</Link>
+      <FixedLink>
+      </FixedLink>
+    </Content>
+    <Content Include="$(PatternToolkitBuilder)\GeneratedCode\WorkflowDesignSchema.xsd">
+      <Visible>true</Visible>
+      <Link>Properties\Schemas\WorkflowDesignSchema.xsd</Link>
+      <FixedLink>
+      </FixedLink>
+    </Content>
+    <Content Include="Creating Pattern Toolkits.guidance" />
+    <Resource Include="Resources\IntegrationTestsProject.png" />
+    <Resource Include="Resources\RequestContract.png" />
+    <Resource Include="Resources\RequestField.png" />
+    <Resource Include="Resources\ResponseContract.png" />
+    <Resource Include="Resources\ResponseField.png" />
+    <Resource Include="Resources\Service.png" />
+    <Resource Include="Resources\Resource.png" />
+    <Resource Include="Resources\ResourceField.png" />
+    <Content Include="Resources\ToolkitIcon.png">
+      <IncludeInVSIX>True</IncludeInVSIX>
+    </Content>
+    <Content Include="BindingPath.pkgdef">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Resource Include="Resources\UnitTestsProject.png" />
+    <Resource Include="Resources\Verb.png" />
+    <Resource Include="Resources\WebServicesProject.png" />
+    <None Include="Assets\Guidance\ToolkitGuidance.doc">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Element/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit\ServiceStackToolkit.slnbldr%252fac3d1d7d-cb64-404a-a442-bc1689c8ee4d</SourceModelReference>
+      <ItemGuid>06dfb93d-63a9-4932-83c6-0240a66fe7ff</ItemGuid>
+    </None>
+    <Content Include="Assets\Templates\Text\Service.t4">
+      <ItemGuid>5f2d4ce6-c8a4-4a70-804b-c1f9bb664d69</ItemGuid>
+      <LastGenOutput>Service.gen.cs</LastGenOutput>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\ServiceInterface.t4">
+      <ItemGuid>7825f817-9fe5-4d36-b35b-3ae654662c99</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\RequestContract.t4">
+      <ItemGuid>5532efc1-2e7e-40cf-9ca9-4d3a0714ea47</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\ResponseContract.t4">
+      <ItemGuid>888701d6-552d-4d62-97c4-ae3ab32304a3</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\RequestContractValidator.t4">
+      <ItemGuid>c21816ef-3250-4b6d-9502-00a4aebf560b</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\ServiceUnitTest.t4">
+      <ItemGuid>31640a45-9166-4d5a-b0ff-78dcd3173c2b</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\WorkflowInterface.t4">
+      <ItemGuid>73b05553-3116-44b6-8344-db05e988ea47</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\ServiceIntegrationTest.t4">
+      <ItemGuid>78fbde7a-10a4-4896-8ec0-78ec23c5d82e</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\StorageProvider.t4">
+      <ItemGuid>fcb33b66-0cfe-4ad8-b5e1-3b8ae1e2a690</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\StorageEntity.t4">
+      <ItemGuid>582db0b5-feee-4b6d-9fc0-ad82c3687cc5</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\StorageEntityTable.t4">
+      <ItemGuid>ba9b0ee1-da56-4f35-852a-809186651da1</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\DataContract.t4">
+      <ItemGuid>774db771-9c3b-40c1-916f-dd208a2934ea</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\DataContractInterface.t4">
+      <ItemGuid>9e6e96b4-294e-420a-9574-c95d6db03710</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Assets\Templates\Text\AppHost.t4">
+      <ItemGuid>cda7730e-47f1-4262-a881-0efddc296094</ItemGuid>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <None Include="PatternTooling.toolingdesign">
+      <ItemGuid>a21484f9-4d41-4f18-9d5a-ac04287f9f08</ItemGuid>
+    </None>
+    <None Include="source.extension.vsixmanifest">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>source.extension.tt</DependentUpon>
+      <IsToolkitManifest>True</IsToolkitManifest>
+    </None>
+    <Resource Include="Resources\PatternIcon.png" />
+    <Content Include="$(PatternToolkitBuilder)\NuPatternToolkitManager.vsix">
+      <Visible>false</Visible>
+      <Link>NuPatternToolkitManager.vsix</Link>
+      <FixedLink>
+      </FixedLink>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceStackToolkit.Automation\ServiceStackToolkit.Automation.csproj">
+      <Name>ServiceStackToolkit.Automation</Name>
+      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup</IncludeOutputGroupsInVSIX>
+      <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup</IncludeOutputGroupsInVSIXLocalOnly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4df5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Templates\Items\" />
+    <Folder Include="Assets\Templates\Projects\" />
+    <Folder Include="Assets\Wizards\Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PatternModel.patterndefinition">
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Element/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit\ServiceStackToolkit.slnbldr%252f0b37c7c9-fa87-46e3-b221-60280f8c5bd9</SourceModelReference>
+      <ItemGuid>af7b3cfc-f68d-4efd-8f9e-314d97cce908</ItemGuid>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="210a0741-0c64-4dcc-b4f2-00a21b099de4.patterndefinition.diagram">
+      <DependentUpon>PatternModel.patterndefinition</DependentUpon>
+    </None>
+    <None Include="source.extension.gen.ttinclude">
+      <DependentUpon>source.extension.tt</DependentUpon>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Element/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252fc71db203-b05f-4a4f-bc57-7b8ec0cfd832</SourceModelReference>
+      <ItemGuid>f3f667b3-aede-41b7-a808-22270f6af782</ItemGuid>
+    </None>
+    <None Include="source.extension.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>source.extension.vsixmanifest</LastGenOutput>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Element/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit\ServiceStackToolkit.slnbldr%252fc71db203-b05f-4a4f-bc57-7b8ec0cfd832</SourceModelReference>
+      <ItemGuid>0f14140f-a444-45c0-a14b-1e2d58667de4</ItemGuid>
+    </None>
+  </ItemGroup>
+  <!-- Properties for Toolkit Targets -->
+  <PropertyGroup>
+    <CopyVsixDebuggingDependencies>true</CopyVsixDebuggingDependencies>
+    <CopyVsixToFolder Condition=" '$(TeamBuildConstants)' == '' ">$(SolutionDir)Binaries</CopyVsixToFolder>
+    <!-- <CopyVsixToFolder Condition=" '$(TeamBuildConstants)' != '' ">$(SolutionRoot)\TeamProjectRoot\Projects\BranchPath\Binaries</CopyVsixToFolder> -->
+  </PropertyGroup>
+  <PropertyGroup>
+    <RegisterOutputPackage>true</RegisterOutputPackage>
+    <RegisterWithCodebase>true</RegisterWithCodebase>
+    <GacTargetOutput>false</GacTargetOutput>
+    <GeneratePkgDefFile>false</GeneratePkgDefFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" />
+  <Import Project="$(localappdata)\Microsoft\MSBuild\NuPattern\NuPattern Toolkit Builder\NuPattern.Authoring.PatternToolkitVersion.targets" />
+  <PropertyGroup>
+    <StartProgram>$(DevEnvDir)\devenv.exe</StartProgram>
+    <StartAction>Program</StartAction>
+    <StartArguments>/rootsuffix Exp</StartArguments>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+            Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>

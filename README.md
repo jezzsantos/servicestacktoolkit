@@ -15,8 +15,7 @@ Based upon simple configuration by the developer, the toolkit automates the crea
 If you like the toolkit and think we could/should improve it, then please go ahead and fork it and share your knowledge.
 
 # Developing the Toolkit
-To develop, improve, or contribute to the toolkit, you first need to install the 'NuPattern' tools to Visual Studio 2013. Download the 'NuPattern' extension from http://nupattern.org or from within the 'Extensions and Updates' in Visual Studio 2013.
-To install the 'NuPattern' extension, you first need to install the 'Visual Studio 2013 SDK'. Do that before installing 'NuPattern'.
+To develop, improve, or contribute to the toolkit, you first need to install the 'NuPattern' tools to Visual Studio 2013. To install the 'NuPattern' tools, you first need to install the ['Visual Studio 2013 SDK'](http://www.microsoft.com/en-nz/download/details.aspx?id=40758). Do that before installing 'NuPattern'. Then doanload and install ['NuPattern'](http://nupattern.org) or from within the 'Extensions and Updates' in Visual Studio 2013.
 Then, just clone or fork the code from this site. Build the code, and hit F5 or CTRL+F5 to run the toolkit in the 'Experimental Instance' of Visual Studio. 
 
 # Using the Toolkit

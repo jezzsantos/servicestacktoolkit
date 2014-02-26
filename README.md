@@ -16,7 +16,9 @@ This project is intended to be shared and evolved by those who are keen to share
 If you like the toolkit and think we could/should improve it, then please go ahead and fork it and share your knowledge.
 
 # Getting Started
-hold on a sec
+See the walkthrough in the wiki: [Walkthrough](https://github.com/jezzsantos/servicestacktoolkit/wiki).
+
+See the video for walkthrough of the toolkit in action used in a real world solution. [Video](http://www.youtube.com/watch?v=ejTyvKba_vo)
 
 
 # Developing the Toolkit

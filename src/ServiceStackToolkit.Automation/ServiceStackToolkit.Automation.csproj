@@ -100,43 +100,43 @@
       <ItemGuid>9f30c5cd-7024-4b8e-9924-5869ddffbdaa</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\CollectionImplementation.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>8b463bd6-8c2c-4a17-93b0-e376f112ba1e</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\CollectionInterface.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>33df733c-cd16-417c-94f1-4b29bb1ecbac</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\ElementImplementation.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>1d405df1-842d-4dae-9720-48920b2df6ef</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\ElementInterface.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>144bca4c-9341-4356-b536-0469e9e924bd</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\ExtensionPointImplementation.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>b09fb596-7c98-4c6e-bcc2-27ef990314c5</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\ExtensionPointInterface.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>f1e90354-09ad-44a6-a648-2aeb9c4d0ff6</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\ProductImplementation.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>c959d1ed-2a9b-42d8-887a-8ae9b40ccf19</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\ProductInterface.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>9535be85-3938-416b-ba5f-948cb0f9bb9d</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\ViewImplementation.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>b7763c13-e653-434b-a0b0-64262054ba19</ItemGuid>
     </Compile>
     <Compile Include="GeneratedCode\ServiceStackToolkit\ViewInterface.gen.cs">
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Product/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252f19cbcfeb-3cda-4653-abf3-171d85812d73</SourceModelReference>
       <ItemGuid>c9309def-707e-4ac4-adb5-5e752d109809</ItemGuid>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -145,13 +145,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="StorageType.cs" />
     <Compile Include="TextFormatting.cs" />
     <Compile Include="TypeConverters\HttpVerbEnumConverter.cs">
       <ItemGuid>4b1ce4dd-1eef-4d24-8353-049f1113947d</ItemGuid>
-    </Compile>
-    <Compile Include="TypeConverters\StorageTypeEnumConverter.cs">
-      <ItemGuid>89cd415a-3532-4f75-80da-a087c42d1f70</ItemGuid>
     </Compile>
     <Compile Include="TypeEditors\AnyDataTypePicker.cs">
       <ItemGuid>c4ff69d0-3125-4353-85a9-95c51783a938</ItemGuid>

@@ -15,7 +15,6 @@
     var verb = requestContract.Parent;
     var service = verb.Parent;
     var rootnamespace = requestContract.Parent.Parent.Parent.Parent.RootNamespace;
-    var commonServicesNamespace = "MySolution.Services";
     var hasCustomSerialization = (requestContract.RequestFields.Any(rf => !string.IsNullOrEmpty(rf.SerializedName)));
 #>
 //------------------------------------------------------------------------------
@@ -37,7 +36,6 @@ using System.Runtime.Serialization;
 }
 #>
 using ServiceStack;
-using <#= commonServicesNamespace #>.Security;
 
 namespace <#= rootnamespace #>.MessageContracts
 {
@@ -53,12 +51,6 @@ if (verb.IsTestingOnly)
     /// Defines the <#= verb.InstanceName #> request for the '<#= service.ResourceNamePlural #>' resource.
     /// </summary>
 <#
-if (verb.IsAuthorized)
-{
-#>
-    [RequireAuthorization]
-<#
-}
 if (hasCustomSerialization)
 {
 #>

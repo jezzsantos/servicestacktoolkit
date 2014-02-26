@@ -21,8 +21,8 @@
           <elements>
             <element Id="0b37c7c9-fa87-46e3-b221-60280f8c5bd9" definitionId="5da53e5a-0ba8-48f8-a922-1712244c388c" definitionName="PatternModel" instanceName="Pattern Model">
               <properties>
-                <property Id="1b251424-c8c5-4612-b6c2-5ed6964fb0d4" definitionId="53ef780a-fc40-40dd-8c5c-34c70f7b9c90" definitionName="ValidateOnBuild" rawValue="Never" />
-                <property Id="ea552113-d610-4381-a824-4cf8229400ff" definitionId="a3436f96-4d42-4ad4-92c4-07a16502b397" definitionName="ToolkitDefinitionFile" rawValue="C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit\PatternModel.patterndefinition" />
+                <property Id="1b251424-c8c5-4612-b6c2-5ed6964fb0d4" definitionId="53ef780a-fc40-40dd-8c5c-34c70f7b9c90" definitionName="ValidateOnBuild" rawValue="Always" />
+                <property Id="ea552113-d610-4381-a824-4cf8229400ff" definitionId="a3436f96-4d42-4ad4-92c4-07a16502b397" definitionName="ToolkitDefinitionFile" rawValue="C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit\PatternModel.patterndefinition" />
               </properties>
               <references>
                 <reference Id="56d4fa46-641b-4e89-9491-6f7856ae310d" value="solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/af7b3cfc-f68d-4efd-8f9e-314d97cce908" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: &quot;PatternModel.patterndefinition&quot;,&#xD;&#xA;  &quot;SyncNames&quot;: false,&#xD;&#xA;  &quot;Id&quot;: &quot;e52d1228-39f9-422d-b667-1e6f26249aa0&quot;&#xD;&#xA;}" />
@@ -59,7 +59,7 @@
                 <element Id="ac3d1d7d-cb64-404a-a442-bc1689c8ee4d" definitionId="c3d66aa5-3199-44ad-b7d7-f375a9ab16d3" definitionName="Guidance" instanceName="Guidance">
                   <properties>
                     <property Id="4f9158f8-0bac-44fe-8cd5-44cb24645703" definitionId="70d70df3-799d-4107-b77b-0001119484a6" definitionName="ProjectContentPath" rawValue="GeneratedCode\Guidance\Content" />
-                    <property Id="5ffa8029-52b0-4908-b83b-4d0c7ea9aeed" definitionId="39537f0e-76a8-409b-adb5-e54fbdbd8b27" definitionName="DocumentFilePath" rawValue="C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit\Assets\Guidance\ToolkitGuidance.doc" />
+                    <property Id="5ffa8029-52b0-4908-b83b-4d0c7ea9aeed" definitionId="39537f0e-76a8-409b-adb5-e54fbdbd8b27" definitionName="DocumentFilePath" rawValue="C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit\Assets\Guidance\ToolkitGuidance.doc" />
                     <property Id="9fff39f0-d057-43b2-b651-9de6f96b09a2" definitionId="81c7a831-97e3-4067-9d15-8d7fb671a755" definitionName="DefaultInstanceName" rawValue="Working with ServiceStackToolkit" />
                   </properties>
                   <references>
@@ -110,21 +110,6 @@
                         <element Id="17b31a85-e376-43e5-b29e-58af7314bce0" definitionId="c6a0f8d4-59df-4dad-b92e-c6a1e54be5e2" definitionName="TextTemplate" instanceName="ServiceIntegrationTest">
                           <references>
                             <reference Id="77037f51-3fdb-4ab6-a3ed-212725b6458a" value="solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/78fbde7a-10a4-4896-8ec0-78ec23c5d82e" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: null,&#xD;&#xA;  &quot;SyncNames&quot;: true,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
-                          </references>
-                        </element>
-                        <element Id="e191f493-f970-4527-94fa-bf06fbddd71d" definitionId="c6a0f8d4-59df-4dad-b92e-c6a1e54be5e2" definitionName="TextTemplate" instanceName="StorageProvider">
-                          <references>
-                            <reference Id="0f54dad0-dd20-4f99-b667-ba242ea7fef7" value="solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/fcb33b66-0cfe-4ad8-b5e1-3b8ae1e2a690" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: null,&#xD;&#xA;  &quot;SyncNames&quot;: true,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
-                          </references>
-                        </element>
-                        <element Id="822738f0-0c57-4b9b-9340-d74e92b6c87d" definitionId="c6a0f8d4-59df-4dad-b92e-c6a1e54be5e2" definitionName="TextTemplate" instanceName="StorageEntity">
-                          <references>
-                            <reference Id="59c062f1-d29b-49b7-9bd4-9e2eb5e1cadb" value="solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/582db0b5-feee-4b6d-9fc0-ad82c3687cc5" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: null,&#xD;&#xA;  &quot;SyncNames&quot;: true,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
-                          </references>
-                        </element>
-                        <element Id="4735e5c0-d374-4920-afa2-070b1646831f" definitionId="c6a0f8d4-59df-4dad-b92e-c6a1e54be5e2" definitionName="TextTemplate" instanceName="StorageEntityTable">
-                          <references>
-                            <reference Id="6153fcb7-26e6-4573-b74f-9d99f554d999" value="solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/ba9b0ee1-da56-4f35-852a-809186651da1" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: null,&#xD;&#xA;  &quot;SyncNames&quot;: true,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
                           </references>
                         </element>
                         <element Id="4e3c7b77-5102-4bb1-a2a4-3b25e573ecca" definitionId="c6a0f8d4-59df-4dad-b92e-c6a1e54be5e2" definitionName="TextTemplate" instanceName="DataContract">
@@ -213,11 +198,6 @@
                             <element Id="3bb58fcf-1304-4da8-91d0-ab1bbb743fa3" definitionId="8d45d1e8-2551-4539-8449-ff3e0962d5f5" definitionName="EnumTypeConverter" instanceName="HttpVerbEnumConverter">
                               <references>
                                 <reference Id="5589c2c1-353e-4251-832e-cedfc379bae8" value="solution://9f745c6f-a69f-41cb-8007-e329833d0491/4b1ce4dd-1eef-4d24-8353-049f1113947d" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: null,&#xD;&#xA;  &quot;SyncNames&quot;: true,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
-                              </references>
-                            </element>
-                            <element Id="bd954f76-10f0-4ff0-908d-6fbe9cfca0d3" definitionId="8d45d1e8-2551-4539-8449-ff3e0962d5f5" definitionName="EnumTypeConverter" instanceName="StorageTypeEnumConverter">
-                              <references>
-                                <reference Id="4e292237-97ff-4a74-abb1-05ea9e7939a8" value="solution://9f745c6f-a69f-41cb-8007-e329833d0491/89cd415a-3532-4f75-80da-a087c42d1f70" kind="NuPattern.Runtime.References.SolutionArtifactLinkReference" tag="{&#xD;&#xA;  &quot;Tag&quot;: &quot;&quot;,&#xD;&#xA;  &quot;TargetFileName&quot;: null,&#xD;&#xA;  &quot;SyncNames&quot;: true,&#xD;&#xA;  &quot;Id&quot;: &quot;00000000-0000-0000-0000-000000000000&quot;&#xD;&#xA;}" />
                               </references>
                             </element>
                           </elements>

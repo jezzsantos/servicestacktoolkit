@@ -30,6 +30,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ServiceStack;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using <#= codeRootnamespace #>.MessageContracts;
@@ -56,12 +57,14 @@ namespace <#= testRootnamespace #>.Services
         [TestClass]
         public partial class GivenTheService : GivenTheServiceBase { }
 
-        public abstract class GivenTheServiceBase : AzureIntegrationTest
+        public abstract class GivenTheServiceBase
         {
+            protected JsonServiceClient Client { get; private set; }
+
             [TestInitialize]
             public virtual void InitalizeContext()
             {
-                base.InitializeContext();
+                this.Client = new JsonServiceClient(ConfigurationManager.AppSettings[@"ApiBaseUrl"]);
             }
 
 <#
@@ -222,6 +225,9 @@ foreach (var verb in service.Verbs)
             }
             else
             {
+                var requiredFields = verb.RequestContract.RequestFields.Where(rf => rf.IsRequired);
+                if (requiredFields.Any())
+                {
 #>
             [TestMethod, TestCategory("Integration")]
             public virtual void When<#= TextFormatting.TitleCase(verb.VerbType) #><#= verb.RequestContract.ContractName #>WithEmptyRequest_ThenThrowsBadRequest()
@@ -231,6 +237,7 @@ foreach (var verb in service.Verbs)
             }
 
 <#
+                }
             }
 #>
             [TestMethod, TestCategory("Integration")]
@@ -314,7 +321,7 @@ foreach (var verb in service.Verbs)
             {
                 return new <#= verb.RequestContract.ContractName #>
                 {
-                    Id = fields.ContainsKey(Reflection.Reflector<<#= verb.RequestContract.ContractName #>>.GetPropertyName(x => x.Id)) ? fields[Reflection.Reflector<<#= verb.RequestContract.ContractName #>>.GetPropertyName(x => x.Id)] : null,
+                    Id = fields.ContainsKey(Reflector<<#= verb.RequestContract.ContractName #>>.GetPropertyName(x => x.Id)) ? fields[Reflector<<#= verb.RequestContract.ContractName #>>.GetPropertyName(x => x.Id)] : null,
                 };
             }
 

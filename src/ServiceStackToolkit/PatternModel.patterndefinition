@@ -21,7 +21,7 @@
         <automationSettingsSchemaMoniker Id="487871d9-8871-40d3-914b-ebb14d642321" />
       </extendedElement>
     </eventSettings>
-    <eventSettings Id="58b447a0-1962-418c-a5e4-523f95af8d14" commandId="2938461c-a751-4b79-a7ce-5baa56c14588" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
+    <eventSettings Id="58b447a0-1962-418c-a5e4-523f95af8d14" commandId="a581f455-5bd3-41e7-baa5-b091ffd3acb4" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
       <extendedElement>
         <automationSettingsSchemaMoniker Id="0e6e1698-d57f-4e81-a6be-68c0a7d7bf6a" />
       </extendedElement>
@@ -172,63 +172,6 @@
         <automationSettingsSchemaMoniker Id="84511cd0-917f-48e7-8240-aa42f3bfe22a" />
       </extendedElement>
     </eventSettings>
-    <eventSettings Id="920ba6db-39a4-42fc-81e7-b73bc960a568" commandId="2938461c-a751-4b79-a7ce-5baa56c14588" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
-      <extendedElement>
-        <automationSettingsSchemaMoniker Id="4760f134-62f9-4d16-b161-3f6973d2fe0c" />
-      </extendedElement>
-      <conditions>[
-  {
-    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
-    "Properties": [
-      {
-        "Name": "ValidateDescendants",
-        "Value": "True",
-        "ValueProvider": null
-      }
-    ]
-  },
-  {
-    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
-    "Properties": [
-      {
-        "Name": "ComparisonKind",
-        "Value": "OrdinalIgnoreCase",
-        "ValueProvider": null
-      },
-      {
-        "Name": "LeftValue",
-        "Value": "{StorageType}",
-        "ValueProvider": null
-      },
-      {
-        "Name": "RightValue",
-        "Value": "AzureTable",
-        "ValueProvider": null
-      }
-    ]
-  },
-  {
-    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
-    "Properties": [
-      {
-        "Name": "ComparisonKind",
-        "Value": "OrdinalIgnoreCase",
-        "ValueProvider": null
-      },
-      {
-        "Name": "LeftValue",
-        "Value": "{Parent.Parent.Parent.Parent.GenerateCodeOnBuild}",
-        "ValueProvider": null
-      },
-      {
-        "Name": "RightValue",
-        "Value": "True",
-        "ValueProvider": null
-      }
-    ]
-  }
-]</conditions>
-    </eventSettings>
     <eventSettings Id="101614db-41f9-448b-8994-f71606e6d1dd" commandId="4d976465-f8fa-4bdb-bf6c-5220dbcee124" eventId="NuPattern.Library.Events.IOnBuildStartedEvent" wizardId="00000000-0000-0000-0000-000000000000">
       <extendedElement>
         <automationSettingsSchemaMoniker Id="0b2a14ca-7ee2-4ba4-a19f-67d66040dfa9" />
@@ -270,65 +213,6 @@
       <extendedElement>
         <automationSettingsSchemaMoniker Id="d757adb5-e946-4d2f-b583-445711174d14" />
       </extendedElement>
-      <conditions>[
-  {
-    "TypeId": "NuPattern.Library.Conditions.ValidElementCondition",
-    "Properties": [
-      {
-        "Name": "ValidateDescendants",
-        "Value": "True",
-        "ValueProvider": null
-      }
-    ]
-  },
-  {
-    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
-    "Properties": [
-      {
-        "Name": "ComparisonKind",
-        "Value": "OrdinalIgnoreCase",
-        "ValueProvider": null
-      },
-      {
-        "Name": "LeftValue",
-        "Value": "{Parent.Parent.GenerateCodeOnBuild}",
-        "ValueProvider": null
-      },
-      {
-        "Name": "RightValue",
-        "Value": "True",
-        "ValueProvider": null
-      }
-    ]
-  }
-]</conditions>
-    </eventSettings>
-    <eventSettings Id="57117080-e3ee-4501-9b90-54fcc66e2ffe" commandId="2938461c-a751-4b79-a7ce-5baa56c14588" eventId="ServiceStackToolkit.Automation.Events.IOnSyncEvent" wizardId="00000000-0000-0000-0000-000000000000">
-      <extendedElement>
-        <automationSettingsSchemaMoniker Id="796ed7e0-3137-444c-9673-5d0120cb4798" />
-      </extendedElement>
-      <conditions>[
-  {
-    "TypeId": "NuPattern.Library.Conditions.StringValueEqualsCondition",
-    "Properties": [
-      {
-        "Name": "ComparisonKind",
-        "Value": "OrdinalIgnoreCase",
-        "ValueProvider": null
-      },
-      {
-        "Name": "LeftValue",
-        "Value": "{StorageType}",
-        "ValueProvider": null
-      },
-      {
-        "Name": "RightValue",
-        "Value": "AzureTable",
-        "ValueProvider": null
-      }
-    ]
-  }
-]</conditions>
     </eventSettings>
     <eventSettings Id="a4bb6054-1ed2-4d7a-beb0-7539cb638b2b" commandId="a581f455-5bd3-41e7-baa5-b091ffd3acb4" eventId="ServiceStackToolkit.Automation.Events.IOnSyncEvent" wizardId="00000000-0000-0000-0000-000000000000">
       <extendedElement>
@@ -993,174 +877,6 @@
   {
     "Name": "Packages",
     "Value": "ServiceStack",
-    "ValueProvider": null
-  }
-]</properties>
-    </commandSettings>
-    <commandSettings Id="c57f6f9a-a1eb-4c30-8f4b-c7e93a9735b0" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
-      <extendedElement>
-        <automationSettingsSchemaMoniker Id="98ff1a51-f130-4d50-af2b-a0cefccacf99" />
-      </extendedElement>
-      <properties>[
-  {
-    "Name": "SanitizeName",
-    "Value": "True",
-    "ValueProvider": null
-  },
-  {
-    "Name": "SyncName",
-    "Value": "False",
-    "ValueProvider": null
-  },
-  {
-    "Name": "Tag",
-    "Value": null,
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetBuildAction",
-    "Value": null,
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetCopyToOutput",
-    "Value": "DoNotCopy",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetFileName",
-    "Value": "{ResourceNameSingular}StorageProvider",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetPath",
-    "Value": "..\\..\\~\\Storage",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TemplateUri",
-    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/StorageProvider.t4",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TemplateAuthoringUri",
-    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/fcb33b66-0cfe-4ad8-b5e1-3b8ae1e2a690",
-    "ValueProvider": null
-  }
-]</properties>
-    </commandSettings>
-    <commandSettings Id="2799febd-df96-44cd-bfeb-c50617ee82d9" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
-      <extendedElement>
-        <automationSettingsSchemaMoniker Id="74d0ab78-f5c0-497f-99b0-f4fe381a36de" />
-      </extendedElement>
-      <properties>[
-  {
-    "Name": "SanitizeName",
-    "Value": "True",
-    "ValueProvider": null
-  },
-  {
-    "Name": "SyncName",
-    "Value": "False",
-    "ValueProvider": null
-  },
-  {
-    "Name": "Tag",
-    "Value": null,
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetBuildAction",
-    "Value": null,
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetCopyToOutput",
-    "Value": "DoNotCopy",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetFileName",
-    "Value": "{ResourceNameSingular}Entity",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetPath",
-    "Value": "..\\..\\~\\Storage\\Table",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TemplateUri",
-    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/StorageEntity.t4",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TemplateAuthoringUri",
-    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/582db0b5-feee-4b6d-9fc0-ad82c3687cc5",
-    "ValueProvider": null
-  }
-]</properties>
-    </commandSettings>
-    <commandSettings Id="03a93173-9377-4890-bc22-0bb65cb8789c" typeId="NuPattern.Library.Commands.GenerateProductCodeCommand">
-      <extendedElement>
-        <automationSettingsSchemaMoniker Id="f29e1372-dd1c-429f-beb6-3ff92c088022" />
-      </extendedElement>
-      <properties>[
-  {
-    "Name": "SanitizeName",
-    "Value": "True",
-    "ValueProvider": null
-  },
-  {
-    "Name": "SyncName",
-    "Value": "False",
-    "ValueProvider": null
-  },
-  {
-    "Name": "Tag",
-    "Value": null,
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetBuildAction",
-    "Value": null,
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetCopyToOutput",
-    "Value": "DoNotCopy",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetFileName",
-    "Value": "{ResourceNameSingular}EntityTable",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TargetPath",
-    "Value": "..\\..\\~\\Storage\\Table",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TemplateUri",
-    "Value": "t4://extension/B4A8F72C-332B-4154-9351-F7049C24567D/Assets/Templates/Text/StorageEntityTable.t4",
-    "ValueProvider": null
-  },
-  {
-    "Name": "TemplateAuthoringUri",
-    "Value": "solution://aafcaaec-fe35-443e-9dbc-cb2eb6a927fa/ba9b0ee1-da56-4f35-852a-809186651da1",
-    "ValueProvider": null
-  }
-]</properties>
-    </commandSettings>
-    <commandSettings Id="2938461c-a751-4b79-a7ce-5baa56c14588" typeId="NuPattern.Library.Commands.AggregatorCommand">
-      <extendedElement>
-        <automationSettingsSchemaMoniker Id="37200416-3c22-4206-8335-a15c785b5a14" />
-      </extendedElement>
-      <properties>[
-  {
-    "Name": "CommandReferenceList",
-    "Value": "[\r\n  {\r\n    \"CommandId\": \"c57f6f9a-a1eb-4c30-8f4b-c7e93a9735b0\"\r\n  },\r\n  {\r\n    \"CommandId\": \"2799febd-df96-44cd-bfeb-c50617ee82d9\"\r\n  },\r\n  {\r\n    \"CommandId\": \"03a93173-9377-4890-bc22-0bb65cb8789c\"\r\n  }\r\n]",
     "ValueProvider": null
   }
 ]</properties>
@@ -2065,27 +1781,6 @@
   ]
 }</valueProvider>
                       </property>
-                      <property Id="3f0db28f-5dec-4b61-a63e-b458cc2f1530" name="StorageType" displayName="Storage Type" description="The type of storage support" codeIdentifier="StorageType" category="Persistence" typeConverterTypeName="ServiceStackToolkit.Automation.TypeConverters.StorageTypeEnumConverter, ServiceStackToolkit.Automation">
-                        <customizationPolicy name="CustomizationPolicySchema1">
-                          <settings>
-                            <setting propertyId="DisplayName" />
-                            <setting propertyId="Description" />
-                            <setting propertyId="RawDefaultValue" />
-                            <setting propertyId="IsVisible" />
-                            <setting propertyId="IsReadOnly" />
-                            <setting propertyId="Category" />
-                            <setting propertyId="TypeConverterTypeName" />
-                            <setting propertyId="EditorTypeName" />
-                            <setting propertyId="RawValidationRules" />
-                            <setting propertyId="RawValueProvider" />
-                          </settings>
-                        </customizationPolicy>
-                        <defaultValue>{
-  "Name": "DefaultValue",
-  "Value": "AzureTable",
-  "ValueProvider": null
-}</defaultValue>
-                      </property>
                     </properties>
                     <automationSettings>
                       <automationSettings Id="b26bd509-4fa0-4979-88dc-09f572b3ad52" name="CreateDefaultVerbs" displayName="Create Default Verbs" description="" codeIdentifier="CreateDefaultVerbs" automationType="Command">
@@ -2205,51 +1900,6 @@
                           </settings>
                         </customizationPolicy>
                       </automationSettings>
-                      <automationSettings Id="98ff1a51-f130-4d50-af2b-a0cefccacf99" name="GenerateStorageProvider" displayName="Generate Storage Provider" description="" codeIdentifier="GenerateStorageProvider" automationType="Command">
-                        <customizationPolicy name="CustomizationPolicySchema1">
-                          <settings>
-                            <setting propertyId="DisplayName" />
-                            <setting propertyId="Description" />
-                            <setting propertyId="Settings" />
-                          </settings>
-                        </customizationPolicy>
-                      </automationSettings>
-                      <automationSettings Id="74d0ab78-f5c0-497f-99b0-f4fe381a36de" name="GenerateStorageEntity" displayName="Generate Storage Entity" description="" codeIdentifier="GenerateStorageEntity" automationType="Command">
-                        <customizationPolicy name="CustomizationPolicySchema1">
-                          <settings>
-                            <setting propertyId="DisplayName" />
-                            <setting propertyId="Description" />
-                            <setting propertyId="Settings" />
-                          </settings>
-                        </customizationPolicy>
-                      </automationSettings>
-                      <automationSettings Id="f29e1372-dd1c-429f-beb6-3ff92c088022" name="GenerateStorageEntityTable" displayName="Generate Storage Entity Table" description="" codeIdentifier="GenerateStorageEntityTable" automationType="Command">
-                        <customizationPolicy name="CustomizationPolicySchema1">
-                          <settings>
-                            <setting propertyId="DisplayName" />
-                            <setting propertyId="Description" />
-                            <setting propertyId="Settings" />
-                          </settings>
-                        </customizationPolicy>
-                      </automationSettings>
-                      <automationSettings Id="37200416-3c22-4206-8335-a15c785b5a14" name="GenerateAllStorageCode" displayName="Generate All Storage Code" description="" codeIdentifier="GenerateAllStorageCode" automationType="Command">
-                        <customizationPolicy name="CustomizationPolicySchema1">
-                          <settings>
-                            <setting propertyId="DisplayName" />
-                            <setting propertyId="Description" />
-                            <setting propertyId="Settings" />
-                          </settings>
-                        </customizationPolicy>
-                      </automationSettings>
-                      <automationSettings Id="4760f134-62f9-4d16-b161-3f6973d2fe0c" name="GenerateAllStorageCodeOnBuild" displayName="Generate All Storage Code On Build" description="" codeIdentifier="GenerateAllStorageCodeOnBuild" automationType="Event Launch Point" classification="LaunchPoint">
-                        <customizationPolicy name="CustomizationPolicySchema1">
-                          <settings>
-                            <setting propertyId="DisplayName" />
-                            <setting propertyId="Description" />
-                            <setting propertyId="Settings" />
-                          </settings>
-                        </customizationPolicy>
-                      </automationSettings>
                       <automationSettings Id="24fc237c-06fd-4320-a4fa-f6e1758d9c1d" name="GenerateDataContract" displayName="Generate Data Contract" description="" codeIdentifier="GenerateDataContract" automationType="Command">
                         <customizationPolicy name="CustomizationPolicySchema1">
                           <settings>
@@ -2260,15 +1910,6 @@
                         </customizationPolicy>
                       </automationSettings>
                       <automationSettings Id="515aa42f-b5df-46a9-b750-d513bf856492" name="GenerateDataContractInterface" displayName="Generate Data Contract Interface" description="" codeIdentifier="GenerateDataContractInterface" automationType="Command">
-                        <customizationPolicy name="CustomizationPolicySchema1">
-                          <settings>
-                            <setting propertyId="DisplayName" />
-                            <setting propertyId="Description" />
-                            <setting propertyId="Settings" />
-                          </settings>
-                        </customizationPolicy>
-                      </automationSettings>
-                      <automationSettings Id="796ed7e0-3137-444c-9673-5d0120cb4798" name="GenerateAllStorageCodeOnSync" displayName="Generate All Storage Code On Sync" description="" codeIdentifier="GenerateAllStorageCodeOnSync" automationType="Event Launch Point" classification="LaunchPoint">
                         <customizationPolicy name="CustomizationPolicySchema1">
                           <settings>
                             <setting propertyId="DisplayName" />
@@ -3092,27 +2733,6 @@
     ]
   }
 ]</validationRules>
-                              </property>
-                              <property Id="4009bdbd-461a-41ca-96a5-ab2d61feb63e" name="IsPersisted" displayName="Is Persisted" description="Whether the field is persisted in storage" codeIdentifier="IsPersisted" type="System.Boolean">
-                                <customizationPolicy name="CustomizationPolicySchema1">
-                                  <settings>
-                                    <setting propertyId="DisplayName" />
-                                    <setting propertyId="Description" />
-                                    <setting propertyId="RawDefaultValue" />
-                                    <setting propertyId="IsVisible" />
-                                    <setting propertyId="IsReadOnly" />
-                                    <setting propertyId="Category" />
-                                    <setting propertyId="TypeConverterTypeName" />
-                                    <setting propertyId="EditorTypeName" />
-                                    <setting propertyId="RawValidationRules" />
-                                    <setting propertyId="RawValueProvider" />
-                                  </settings>
-                                </customizationPolicy>
-                                <defaultValue>{
-  "Name": "DefaultValue",
-  "Value": "True",
-  "ValueProvider": null
-}</defaultValue>
                               </property>
                               <property Id="73456859-bf32-4830-96d4-00d2d453a120" name="Description" displayName="Description" description="The description of the field." codeIdentifier="Description" category="CodeGen">
                                 <customizationPolicy name="CustomizationPolicySchema1">

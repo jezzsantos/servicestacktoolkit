@@ -223,7 +223,6 @@ namespace ServiceStackToolkit
 	using global::NuPattern.Runtime;
 	using global::NuPattern.Runtime.Bindings;
 	using global::NuPattern.Runtime.ToolkitInterface;
-	using global::ServiceStackToolkit.Automation.TypeConverters;
 	using global::System;
 	using global::System.Collections.Generic;
 	using global::System.ComponentModel;
@@ -300,19 +299,6 @@ namespace ServiceStackToolkit
 		{
 			get { return this.proxy.GetValue(() => this.ResourceNamePlural); }
 			set { this.proxy.SetValue(() => this.ResourceNamePlural, value); }
-		}
-
-		/// <summary>
-		/// The type of storage support
-		/// </summary>
-		[Description("The type of storage support")]
-		[DisplayName("Storage Type")]
-		[Category("Persistence")]
-		[TypeConverter(typeof(StorageTypeEnumConverter))]
-		public virtual String StorageType
-		{
-			get { return this.proxy.GetValue(() => this.StorageType); }
-			set { this.proxy.SetValue(() => this.StorageType, value); }
 		}
 
 		/// <summary>
@@ -1634,18 +1620,6 @@ namespace ServiceStackToolkit
 		{
 			get { return this.proxy.GetValue(() => this.DataType); }
 			set { this.proxy.SetValue(() => this.DataType, value); }
-		}
-
-		/// <summary>
-		/// Whether the field is persisted in storage
-		/// </summary>
-		[Description("Whether the field is persisted in storage")]
-		[DisplayName("Is Persisted")]
-		[Category("General")]
-		public virtual Boolean IsPersisted
-		{
-			get { return this.proxy.GetValue(() => this.IsPersisted); }
-			set { this.proxy.SetValue(() => this.IsPersisted, value); }
 		}
 
 		/// <summary>

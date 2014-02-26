@@ -135,7 +135,6 @@ namespace ServiceStackToolkit
 	using global::NuPattern.Runtime;
 	using global::NuPattern.Runtime.Bindings;
 	using global::NuPattern.Runtime.ToolkitInterface;
-	using global::ServiceStackToolkit.Automation.TypeConverters;
 	using global::System;
 	using global::System.Collections.Generic;
 	using global::System.ComponentModel;
@@ -175,15 +174,6 @@ namespace ServiceStackToolkit
 		[DisplayName("Resource Name (Plural)")]
 		[Category("General")]
 		String ResourceNamePlural { get; set; }
-
-		/// <summary>
-		/// The type of storage support
-		/// </summary>
-		[Description("The type of storage support")]
-		[DisplayName("Storage Type")]
-		[Category("Persistence")]
-		[TypeConverter(typeof(StorageTypeEnumConverter))]
-		String StorageType { get; set; }
 
 		/// <summary>
 		/// The name of this element instance.
@@ -943,14 +933,6 @@ namespace ServiceStackToolkit
 		[Category("CodeGen")]
 		[Editor(typeof(AnyDataTypePicker), typeof(UITypeEditor))]
 		String DataType { get; set; }
-
-		/// <summary>
-		/// Whether the field is persisted in storage
-		/// </summary>
-		[Description("Whether the field is persisted in storage")]
-		[DisplayName("Is Persisted")]
-		[Category("General")]
-		Boolean IsPersisted { get; set; }
 
 		/// <summary>
 		/// The description of the field.

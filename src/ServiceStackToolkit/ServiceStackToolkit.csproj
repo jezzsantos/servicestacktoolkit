@@ -154,18 +154,6 @@
       <ItemGuid>78fbde7a-10a4-4896-8ec0-78ec23c5d82e</ItemGuid>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Assets\Templates\Text\StorageProvider.t4">
-      <ItemGuid>fcb33b66-0cfe-4ad8-b5e1-3b8ae1e2a690</ItemGuid>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Assets\Templates\Text\StorageEntity.t4">
-      <ItemGuid>582db0b5-feee-4b6d-9fc0-ad82c3687cc5</ItemGuid>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-    <Content Include="Assets\Templates\Text\StorageEntityTable.t4">
-      <ItemGuid>ba9b0ee1-da56-4f35-852a-809186651da1</ItemGuid>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
     <Content Include="Assets\Templates\Text\DataContract.t4">
       <ItemGuid>774db771-9c3b-40c1-916f-dd208a2934ea</ItemGuid>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -224,7 +212,7 @@
     </None>
     <None Include="source.extension.gen.ttinclude">
       <DependentUpon>source.extension.tt</DependentUpon>
-      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Element/C:\Projects\GitHub\servicestacktoolkit\ServiceStackToolkit.slnbldr%252fc71db203-b05f-4a4f-bc57-7b8ec0cfd832</SourceModelReference>
+      <SourceModelReference>modelbus://NuPattern.Runtime.Store/ServiceStackToolkit/Element/C:\Projects\GitHub\servicestacktoolkit\src\ServiceStackToolkit.slnbldr%252fc71db203-b05f-4a4f-bc57-7b8ec0cfd832</SourceModelReference>
       <ItemGuid>f3f667b3-aede-41b7-a808-22270f6af782</ItemGuid>
     </None>
     <None Include="source.extension.tt">

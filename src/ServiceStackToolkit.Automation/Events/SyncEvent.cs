@@ -57,9 +57,9 @@ namespace ServiceStackToolkit.Automation.Events
         /// <summary>
         /// Raises the event
         /// </summary>
-        public static void Raise()
+        public static void Raise(object sender)
         {
-            SyncEvent(null, EventArgs.Empty);
+            SyncEvent(sender, EventArgs.Empty);
         }
     }
 }

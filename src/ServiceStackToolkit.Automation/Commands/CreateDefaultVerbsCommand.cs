@@ -42,6 +42,11 @@ namespace ServiceStackToolkit.Automation.Commands
 
             var service = this.CurrentElement;
 
+            // Create some fields
+            service.Resource.CreateResourceField("Field1");
+            service.Resource.CreateResourceField("Field2");
+            service.Resource.CreateResourceField("Field3");
+
             // Create the default GET Verb
             var getVerb = service.CreateVerb("Get", "GET", "/{0}/{{Id}}");
             getVerb.CreateRequestField("Id");

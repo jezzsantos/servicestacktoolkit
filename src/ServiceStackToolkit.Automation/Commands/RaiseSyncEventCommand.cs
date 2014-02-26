@@ -41,7 +41,7 @@ namespace ServiceStackToolkit.Automation.Commands
             tracer.Info(
                 "Executing RaiseSyncEventCommand");
 
-            OnSyncEvent.Raise();
+            OnSyncEvent.Raise(this);
         }
     }
 }

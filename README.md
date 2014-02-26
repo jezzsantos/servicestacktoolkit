@@ -1,7 +1,7 @@
 ServiceStack Toolkit
 ===================
 
-(The is a community run project, all contributions are very welcome)
+(The is a community run project, all contributions are very welcome, actually, they are necessary!)
 
 A developer toolkit (for Visual Studio 2013) for building ServiceStack web services.
 

@@ -20,7 +20,7 @@ See the walkthrough in the wiki: [Walkthrough](https://github.com/jezzsantos/ser
 
 See the video for walkthrough of the toolkit in action used in a real world solution. [Video](http://www.youtube.com/watch?v=ejTyvKba_vo)
 
-[![Demo Video](http://i1.ytimg.com/vi/ejTyvKba_vo/mqdefault.jpg)](http://www.youtube.com/watch?v=ejTyvKba_vo)
+[![Demo Video](http://img.youtube.com/vi/ejTyvKba_vo/0.jpg)](http://www.youtube.com/watch?v=ejTyvKba_vo)
 
 
 # Developing the Toolkit

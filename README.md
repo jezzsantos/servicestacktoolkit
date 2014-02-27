@@ -20,6 +20,8 @@ See the walkthrough in the wiki: [Walkthrough](https://github.com/jezzsantos/ser
 
 See the video for walkthrough of the toolkit in action used in a real world solution. [Video](http://www.youtube.com/watch?v=ejTyvKba_vo)
 
+[![Demo Video](http://i1.ytimg.com/vi/ejTyvKba_vo/mqdefault.jpg)](http://www.youtube.com/watch?v=ejTyvKba_vo)
+
 
 # Developing the Toolkit
 To develop, improve, or contribute to the toolkit, you first need to install the 'NuPattern' tools to Visual Studio 2013. To install the 'NuPattern' tools, you first need to install the ['Visual Studio 2013 SDK'](http://www.microsoft.com/en-nz/download/details.aspx?id=40758). Do that before installing 'NuPattern'. Then download and install ['NuPattern'](http://nupattern.org) or install from within the 'Extensions and Updates' in Visual Studio 2013.
